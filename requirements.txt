@@ -1,0 +1,27 @@
+# Análisis y manipulación de datos
+numpy
+pandas
+scipy
+statsmodels
+scikit-learn
+
+# Visualización
+matplotlib
+seaborn
+plotly
+
+# Notebooks
+jupyter
+
+# Bases de datos y extracción de datos
+sqlalchemy
+pymongo
+beautifulsoup4
+requests
+
+# Pipelines y aplicaciones
+kedro
+streamlit
+
+# Datos geoespaciales
+geopandas
