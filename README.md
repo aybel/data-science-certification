@@ -95,6 +95,16 @@ cp .env.example .env
 # Edita .env con tus credenciales si es necesario
 ```
 
+### 5. Abrir Jupyter Notebook
+
+Con el entorno virtual activado y desde la carpeta raíz del repositorio, ejecuta:
+
+```bash
+jupyter notebook
+```
+
+Jupyter abrirá una pestaña en el navegador. Si no se abre automáticamente, copia en el navegador la URL que aparece en la terminal. Desde ahí, entra a `notebooks/` y abre el archivo `.ipynb` que quieras usar. Para detener Jupyter, vuelve a la terminal y presiona `Ctrl+C`.
+
 ## Dependencias principales
 
 Las dependencias se encuentran en [`requirements.txt`](requirements.txt).
@@ -136,9 +146,9 @@ Las dependencias se encuentran en [`requirements.txt`](requirements.txt).
 
 | Microcertificado | Módulos | Estado |
 | --- | --- | --- |
-| Principios de la Ciencia de Datos | 1-2 | ⬜ Pendiente |
-| Programación en Python | 3-4 | ⬜ Pendiente |
-| Ingeniería de Datos | 5-9 | ⬜ Pendiente |
+| Principios de la Ciencia de Datos | 1-2 | ✅ Completado |
+| Programación en Python | 3-4 | ✅ Completado |
+| Ingeniería de Datos | 5-9 | 🟡 En progreso |
 | Visualización Efectiva de Datos | 10-11 | ⬜ Pendiente |
 | Desarrollo de Visualizaciones | 12-14 | ⬜ Pendiente |
 | Análisis Estadísticos de Datos | 15-17 | ⬜ Pendiente |
@@ -163,6 +173,6 @@ Este repositorio es de uso personal y educativo. Todo el código y los materiale
 
 Tu Nombre  
 GitHub: [@tu-usuario](https://github.com/tu-usuario)  
-LinkedIn: [tu-linkedin](https://linkedin.com/in/tu-linkedin)
+LinkedIn: [tu-linkedin](https://www.linkedin.com/in/aybel)
 
-_Última actualización: agosto de 2026._
+_Última actualización: 09 agosto de 2026._
