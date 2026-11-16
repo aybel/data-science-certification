@@ -27,3 +27,6 @@ streamlit
 
 # Datos geoespaciales
 geopandas
+
+#Sistemas
+python-dotenv

@@ -202,8 +202,11 @@ HeidiSQL solo tiene versión nativa para Windows. En Linux puedes usar DBeaver, 
 
 ```python
 import os
+from dotenv import load_dotenv, find_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
+
+load_dotenv(find_dotenv(), override=True)  # busca el .env en las carpetas padre
 
 url = URL.create(
     "mysql+pymysql",
@@ -216,7 +219,7 @@ url = URL.create(
 engine = create_engine(url)
 ```
 
-`URL.create` escapa caracteres especiales en la contraseña. Las variables se leen del entorno. En un notebook puedes cargarlas desde `.env` con `python-dotenv` (no está en `requirements.txt`) o exportarlas antes de abrir Jupyter.
+`URL.create` escapa caracteres especiales en la contraseña. `python-dotenv` carga las variables de `.env` al entorno (está en `requirements.txt`) y `os.environ` las lee.
 
 ## Dependencias principales
 
