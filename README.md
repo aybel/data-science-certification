@@ -168,7 +168,7 @@ El [`Dockerfile`](Dockerfile) de la raíz construye una imagen de MySQL 8.4 para
 
 Las variables `MYSQL_DATABASE`, `MYSQL_USER` y `MYSQL_PASSWORD` solo se aplican la primera vez, cuando el volumen está vacío. Si las cambias después, elimina el volumen con `docker volume rm ds_mysql_data` (esto borra los datos) y vuelve a crear el contenedor.
 
-Los scripts `.sql` que pongas en [`init/`](init/) se ejecutan en esa misma primera inicialización, en orden alfabético. Después de agregar uno, reconstruye la imagen con `docker build -t ds-mysql .`.
+Los scripts `.sql` que pongas en [`init/`](init/) se ejecutan en esa misma primera inicialización, en orden alfabético. La estructura de la base `agencia` y de sus datos de prueba está documentada en [`init/README.md`](init/README.md). Después de agregar uno, reconstruye la imagen con `docker build -t ds-mysql .`.
 
 ### Arrancar MySQL, MongoDB y PostgreSQL con Docker Compose
 
