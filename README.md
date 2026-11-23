@@ -170,6 +170,60 @@ Las variables `MYSQL_DATABASE`, `MYSQL_USER` y `MYSQL_PASSWORD` solo se aplican 
 
 Los scripts `.sql` que pongas en [`init/`](init/) se ejecutan en esa misma primera inicialización, en orden alfabético. Después de agregar uno, reconstruye la imagen con `docker build -t ds-mysql .`.
 
+### Arrancar MySQL, MongoDB y PostgreSQL con Docker Compose
+
+El archivo [`docker-compose.yml`](docker-compose.yml) define MySQL (`ds-mysql`), MongoDB 8.0 (`ds-mongo`) y PostgreSQL 17 (`ds-postgres`). Lee las credenciales del `.env`. MongoDB necesita `MONGO_USER` y `MONGO_PASSWORD`. PostgreSQL necesita `POSTGRES_USER`, `POSTGRES_PASSWORD` y, opcionalmente, `POSTGRES_DB` (ver `.env.example`).
+
+```bash
+docker compose up -d --build   # levanta los tres
+docker compose up -d mongo     # solo MongoDB
+docker compose up -d postgres  # solo PostgreSQL
+docker compose stop            # detiene sin borrar datos
+docker compose down            # elimina los contenedores y conserva los volúmenes
+```
+
+MongoDB queda en `127.0.0.1:27017` y guarda sus datos en el volumen `ds_mongo_data`. Para abrir una consola: `docker exec -it ds-mongo mongosh -u <MONGO_USER> -p --authenticationDatabase admin`. Los usuarios solo se crean la primera vez, con el volumen vacío. Si ya tienes un contenedor `ds-mysql` creado con `docker run`, elimínalo antes con `docker rm -f ds-mysql` para evitar el conflicto de nombre y de puerto. Conserva el volumen `ds_mysql_data`.
+
+Conexión desde Python:
+
+```python
+import os
+from dotenv import load_dotenv, find_dotenv
+from pymongo import MongoClient
+
+load_dotenv(find_dotenv(), override=True)
+
+client = MongoClient(
+    host=os.getenv("MONGO_HOST", "127.0.0.1"),
+    port=int(os.getenv("MONGO_PORT", "27017")),
+    username=os.environ["MONGO_USER"],
+    password=os.environ["MONGO_PASSWORD"],
+    authSource="admin",
+)
+client.admin.command("ping")
+```
+
+PostgreSQL queda en `127.0.0.1:5432` y guarda sus datos en el volumen `ds_postgres_data`. Consola: `docker exec -it ds-postgres psql -U <POSTGRES_USER> -d <POSTGRES_DB>`. Igual que en los otros motores, el usuario y la base solo se crean con el volumen vacío. Conexión desde Python con SQLAlchemy:
+
+```python
+import os
+from dotenv import load_dotenv, find_dotenv
+from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
+
+load_dotenv(find_dotenv(), override=True)
+
+url = URL.create(
+    "postgresql+psycopg2",
+    username=os.environ["POSTGRES_USER"],
+    password=os.environ["POSTGRES_PASSWORD"],
+    host=os.getenv("POSTGRES_HOST", "127.0.0.1"),
+    port=int(os.getenv("POSTGRES_PORT", "5432")),
+    database=os.getenv("POSTGRES_DB", "ciencia_datos"),
+)
+engine = create_engine(url)
+```
+
 ### Conectarse desde aplicaciones externas
 
 Con el contenedor corriendo, cualquier cliente instalado en tu equipo se conecta por TCP con estos datos:

@@ -30,3 +30,4 @@ geopandas
 
 #Sistemas
 python-dotenv
+psycopg2-binary
