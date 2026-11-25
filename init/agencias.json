@@ -1,0 +1,665 @@
+[
+  {
+    "_id": "agencia_001",
+    "nombre": "AutoMax Premium",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Toyota", "Honda", "Mazda", "Volkswagen"],
+    "contacto": {
+      "telefono": "+52 55 1234 5678",
+      "whatsapp": "+52 55 8765 4321",
+      "email": "ventas@automaxpremium.com",
+      "sitio_web": "www.automaxpremium.com",
+      "redes_sociales": { "facebook": "/AutoMaxPremiumOficial", "instagram": "@automax_premium" }
+    },
+    "ubicacion": {
+      "direccion": "Av. Insurgentes Sur 1450, Col. Actipan", "ciudad": "Ciudad de México", "estado": "CDMX", "codigo_postal": "03230",
+      "coordenadas": { "latitud": 19.3715, "longitud": -99.1789 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 16:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento automotriz", "Seguro de auto", "Taller autorizado"],
+    "inventario": [{ "id_vehiculo": "VH-001", "marca": "Toyota", "modelo": "Corolla", "año": 2024, "precio_mxn": 415000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.8, "fecha_apertura": "2015-03-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_002",
+    "nombre": "MotorCity Guadalajara",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Nissan", "Chevrolet", "Kia"],
+    "contacto": {
+      "telefono": "+52 33 9876 5432", "whatsapp": "+52 33 1122 3344", "email": "contacto@motorcitygdl.com", "sitio_web": "www.motorcitygdl.com",
+      "redes_sociales": { "facebook": "/MotorCityGDL", "instagram": "@motorcity_gdl" }
+    },
+    "ubicacion": {
+      "direccion": "Av. López Mateos Sur 2300", "ciudad": "Guadalajara", "estado": "Jalisco", "codigo_postal": "44510",
+      "coordenadas": { "latitud": 20.6324, "longitud": -103.4141 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Seminuevos certificados", "Gestoría de trámites"],
+    "inventario": [{ "id_vehiculo": "VH-002", "marca": "Nissan", "modelo": "Versa", "año": 2023, "precio_mxn": 285000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.5, "fecha_apertura": "2010-06-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_003",
+    "nombre": "Monterrey Auto Group",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Ford", "Lincoln"],
+    "contacto": {
+      "telefono": "+52 81 5555 6666", "whatsapp": "+52 81 7777 8888", "email": "ventas@monterreyautogroup.mx", "sitio_web": "www.monterreyautogroup.mx",
+      "redes_sociales": { "facebook": "/MonterreyAutoGroup", "instagram": "@mtty_auto" }
+    },
+    "ubicacion": {
+      "direccion": "Av. Constitución 1500, Col. Centro", "ciudad": "Monterrey", "estado": "Nuevo León", "codigo_postal": "64000",
+      "coordenadas": { "latitud": 25.6714, "longitud": -100.3091 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 20:00", "sabado": "09:00 - 17:00", "domingo": "11:00 - 16:00" },
+    "servicios_ofrecidos": ["Venta de flotillas", "Arrendamiento puro", "Servicio de taller"],
+    "inventario": [{ "id_vehiculo": "VH-003", "marca": "Ford", "modelo": "Ranger", "año": 2023, "precio_mxn": 590000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.7, "fecha_apertura": "2008-11-05T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_004",
+    "nombre": "Puebla Motors",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Volkswagen", "SEAT", "Audi"],
+    "contacto": {
+      "telefono": "+52 222 333 4444", "whatsapp": "+52 222 555 6666", "email": "info@pueblamotors.com", "sitio_web": "www.pueblamotors.com",
+      "redes_sociales": { "facebook": "/PueblaMotors", "instagram": "@puebla_motors" }
+    },
+    "ubicacion": {
+      "direccion": "Blvd. Atlixco 450", "ciudad": "Puebla", "estado": "Puebla", "codigo_postal": "72160",
+      "coordenadas": { "latitud": 19.0431, "longitud": -98.2295 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Autos de lujo", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-004", "marca": "Audi", "modelo": "A3", "año": 2022, "precio_mxn": 650000.00, "estado": "Seminuevo", "kilometraje": 15000, "disponible": true }],
+    "calificacion_clientes": 4.2, "fecha_apertura": "2019-02-10T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_005",
+    "nombre": "Querétaro Autos",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Mazda", "Suzuki"],
+    "contacto": {
+      "telefono": "+52 442 123 4567", "whatsapp": "+52 442 987 6543", "email": "ventas@queretaroautos.mx", "sitio_web": "www.queretaroautos.mx",
+      "redes_sociales": { "facebook": "/QueretaroAutos", "instagram": "@qro_autos" }
+    },
+    "ubicacion": {
+      "direccion": "Av. 5 de Febrero 1200", "ciudad": "Santiago de Querétaro", "estado": "Querétaro", "codigo_postal": "76010",
+      "coordenadas": { "latitud": 20.5881, "longitud": -100.3899 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Refacciones", "Servicio mecánico"],
+    "inventario": [{ "id_vehiculo": "VH-005", "marca": "Mazda", "modelo": "CX-5", "año": 2024, "precio_mxn": 480000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.6, "fecha_apertura": "2012-08-22T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_006",
+    "nombre": "Mérida Car Center",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Hyundai", "Mitsubishi"],
+    "contacto": {
+      "telefono": "+52 999 111 2222", "whatsapp": "+52 999 333 4444", "email": "contacto@meridacarcenter.com", "sitio_web": "www.meridacarcenter.com",
+      "redes_sociales": { "facebook": "/MeridaCarCenter", "instagram": "@merida_car" }
+    },
+    "ubicacion": {
+      "direccion": "Calle 50 #450, Col. Centro", "ciudad": "Mérida", "estado": "Yucatán", "codigo_postal": "97000",
+      "coordenadas": { "latitud": 20.9674, "longitud": -89.6237 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Seguros", "Placas y tenencias"],
+    "inventario": [{ "id_vehiculo": "VH-006", "marca": "Hyundai", "modelo": "Creta", "año": 2023, "precio_mxn": 390000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.4, "fecha_apertura": "2017-05-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_007",
+    "nombre": "Tijuana Auto Import",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Toyota", "Honda", "Nissan"],
+    "contacto": {
+      "telefono": "+52 664 555 6666", "whatsapp": "+52 664 777 8888", "email": "ventas@tijuanautoimport.com", "sitio_web": "www.tijuanautoimport.com",
+      "redes_sociales": { "facebook": "/TijuanaAutoImport", "instagram": "@tj_autoimport" }
+    },
+    "ubicacion": {
+      "direccion": "Blvd. Agua Caliente 2000", "ciudad": "Tijuana", "estado": "Baja California", "codigo_postal": "22000",
+      "coordenadas": { "latitud": 32.5149, "longitud": -117.0382 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 16:00", "domingo": "10:00 - 14:00" },
+    "servicios_ofrecidos": ["Autos de importación", "Seminuevos", "Trámites fronterizos"],
+    "inventario": [{ "id_vehiculo": "VH-007", "marca": "Honda", "modelo": "Civic", "año": 2021, "precio_mxn": 350000.00, "estado": "Seminuevo", "kilometraje": 40000, "disponible": true }],
+    "calificacion_clientes": 3.9, "fecha_apertura": "2005-10-01T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_008",
+    "nombre": "León Premium Motors",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["BMW", "Mini"],
+    "contacto": {
+      "telefono": "+52 477 123 4567", "whatsapp": "+52 477 987 6543", "email": "contacto@leonpremium.mx", "sitio_web": "www.leonpremium.mx",
+      "redes_sociales": { "facebook": "/LeonPremiumMotors", "instagram": "@leon_premium" }
+    },
+    "ubicacion": {
+      "direccion": "Blvd. Adolfo López Mateos 3000", "ciudad": "León", "estado": "Guanajuato", "codigo_postal": "37160",
+      "coordenadas": { "latitud": 21.1225, "longitud": -101.6823 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos de lujo", "Financiamiento premium", "Servicio especializado"],
+    "inventario": [{ "id_vehiculo": "VH-008", "marca": "BMW", "modelo": "Serie 3", "año": 2023, "precio_mxn": 950000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.9, "fecha_apertura": "2018-01-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_009",
+    "nombre": "Culiacán Motors",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Chevrolet", "GMC"],
+    "contacto": {
+      "telefono": "+52 667 111 2222", "whatsapp": "+52 667 333 4444", "email": "ventas@culiacanmotors.com", "sitio_web": "www.culiacanmotors.com",
+      "redes_sociales": { "facebook": "/CuliacanMotors", "instagram": "@culiacan_motors" }
+    },
+    "ubicacion": {
+      "direccion": "Blvd. Pedro Infante 1500", "ciudad": "Culiacán", "estado": "Sinaloa", "codigo_postal": "80200",
+      "coordenadas": { "latitud": 24.8091, "longitud": -107.3940 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Camionetas", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-009", "marca": "Chevrolet", "modelo": "Aveo", "año": 2023, "precio_mxn": 280000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.1, "fecha_apertura": "2014-09-12T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_010",
+    "nombre": "Chihuahua Auto Plaza",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Ford", "Chrysler", "Dodge"],
+    "contacto": {
+      "telefono": "+52 614 555 6666", "whatsapp": "+52 614 777 8888", "email": "info@chihuahuaautoplaza.mx", "sitio_web": "www.chihuahuaautoplaza.mx",
+      "redes_sociales": { "facebook": "/ChihuahuaAutoPlaza", "instagram": "@chih_autoplaza" }
+    },
+    "ubicacion": {
+      "direccion": "Av. Tecnológico 2500", "ciudad": "Chihuahua", "estado": "Chihuahua", "codigo_postal": "31200",
+      "coordenadas": { "latitud": 28.6329, "longitud": -106.0691 }
+    },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Seminuevos certificados", "Consignación"],
+    "inventario": [{ "id_vehiculo": "VH-010", "marca": "Ford", "modelo": "Mustang", "año": 2019, "precio_mxn": 750000.00, "estado": "Seminuevo", "kilometraje": 30000, "disponible": true }],
+    "calificacion_clientes": 4.3, "fecha_apertura": "2011-12-05T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_011",
+    "nombre": "Cancún Auto Experience",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Volkswagen", "Audi", "Porsche"],
+    "contacto": { "telefono": "+52 998 123 4567", "whatsapp": "+52 998 987 6543", "email": "ventas@cancunautoexp.com", "sitio_web": "www.cancunautoexp.com", "redes_sociales": { "facebook": "/CancunAutoExp", "instagram": "@cancun_autoexp" } },
+    "ubicacion": { "direccion": "Blvd. Kukulcán Km 15", "ciudad": "Cancún", "estado": "Quintana Roo", "codigo_postal": "77500", "coordenadas": { "latitud": 21.1619, "longitud": -86.8515 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 20:00", "sabado": "10:00 - 18:00", "domingo": "10:00 - 14:00" },
+    "servicios_ofrecidos": ["Renta de autos", "Venta de lujo", "Concierge automotriz"],
+    "inventario": [{ "id_vehiculo": "VH-011", "marca": "Porsche", "modelo": "Macan", "año": 2023, "precio_mxn": 1500000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.9, "fecha_apertura": "2020-07-01T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_012",
+    "nombre": "Toluca Auto Market",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Nissan", "Infiniti"],
+    "contacto": { "telefono": "+52 722 111 2222", "whatsapp": "+52 722 333 4444", "email": "contacto@tolucaautomarket.com", "sitio_web": "www.tolucaautomarket.com", "redes_sociales": { "facebook": "/TolucaAutoMarket", "instagram": "@toluca_auto" } },
+    "ubicacion": { "direccion": "Paseo Tollocan 1800", "ciudad": "Toluca", "estado": "Estado de México", "codigo_postal": "50120", "coordenadas": { "latitud": 19.2924, "longitud": -99.6538 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:30", "sabado": "09:00 - 14:30", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento", "Taller"],
+    "inventario": [{ "id_vehiculo": "VH-012", "marca": "Nissan", "modelo": "Sentra", "año": 2024, "precio_mxn": 320000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2013-03-25T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_013",
+    "nombre": "Veracruz Auto Center",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Toyota", "Lexus"],
+    "contacto": { "telefono": "+52 229 555 6666", "whatsapp": "+52 229 777 8888", "email": "ventas@veracruzautocenter.mx", "sitio_web": "www.veracruzautocenter.mx", "redes_sociales": { "facebook": "/VeracruzAutoCenter", "instagram": "@veracruz_autocenter" } },
+    "ubicacion": { "direccion": "Av. Cuauhtémoc 1200", "ciudad": "Veracruz", "estado": "Veracruz", "codigo_postal": "91910", "coordenadas": { "latitud": 19.1738, "longitud": -96.1342 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Seminuevos", "Seguros"],
+    "inventario": [{ "id_vehiculo": "VH-013", "marca": "Toyota", "modelo": "Hilux", "año": 2023, "precio_mxn": 550000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.5, "fecha_apertura": "2009-06-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_014",
+    "nombre": "Aguascalientes Motors",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Kia", "Hyundai"],
+    "contacto": { "telefono": "+52 449 123 4567", "whatsapp": "+52 449 987 6543", "email": "info@aguascalientesmotors.com", "sitio_web": "www.aguascalientesmotors.com", "redes_sociales": { "facebook": "/AgsMotors", "instagram": "@ags_motors" } },
+    "ubicacion": { "direccion": "Av. Convención 2000", "ciudad": "Aguascalientes", "estado": "Aguascalientes", "codigo_postal": "20000", "coordenadas": { "latitud": 21.8853, "longitud": -102.2916 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Gestoría", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-014", "marca": "Kia", "modelo": "Rio", "año": 2023, "precio_mxn": 270000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.2, "fecha_apertura": "2016-10-10T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_015",
+    "nombre": "Hermosillo Auto Nation",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Ford", "Chevrolet"],
+    "contacto": { "telefono": "+52 662 111 2222", "whatsapp": "+52 662 333 4444", "email": "ventas@hermosilloautonation.mx", "sitio_web": "www.hermosilloautonation.mx", "redes_sociales": { "facebook": "/HermosilloAutoNation", "instagram": "@hermosillo_auto" } },
+    "ubicacion": { "direccion": "Blvd. Solidaridad 500", "ciudad": "Hermosillo", "estado": "Sonora", "codigo_postal": "83170", "coordenadas": { "latitud": 29.0729, "longitud": -110.9559 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de camionetas", "Autos nuevos", "Refacciones"],
+    "inventario": [{ "id_vehiculo": "VH-015", "marca": "Chevrolet", "modelo": "Silverado", "año": 2023, "precio_mxn": 850000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.4, "fecha_apertura": "2015-05-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_016",
+    "nombre": "Morelia Car Gallery",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Mazda", "Volkswagen"],
+    "contacto": { "telefono": "+52 443 555 6666", "whatsapp": "+52 443 777 8888", "email": "contacto@moreliacargallery.com", "sitio_web": "www.moreliacargallery.com", "redes_sociales": { "facebook": "/MoreliaCarGallery", "instagram": "@morelia_cargallery" } },
+    "ubicacion": { "direccion": "Av. Camelinas 1500", "ciudad": "Morelia", "estado": "Michoacán", "codigo_postal": "58290", "coordenadas": { "latitud": 19.7016, "longitud": -101.1849 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "10:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Seminuevos", "Autos de agencia", "Consignación"],
+    "inventario": [{ "id_vehiculo": "VH-016", "marca": "Mazda", "modelo": "Mazda 2", "año": 2022, "precio_mxn": 250000.00, "estado": "Seminuevo", "kilometraje": 20000, "disponible": true }],
+    "calificacion_clientes": 4.1, "fecha_apertura": "2012-08-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_017",
+    "nombre": "Saltillo Auto Group",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Honda", "Acura"],
+    "contacto": { "telefono": "+52 844 123 4567", "whatsapp": "+52 844 987 6543", "email": "ventas@saltilloautogroup.mx", "sitio_web": "www.saltilloautogroup.mx", "redes_sociales": { "facebook": "/SaltilloAutoGroup", "instagram": "@saltillo_auto" } },
+    "ubicacion": { "direccion": "Blvd. Venustiano Carranza 3000", "ciudad": "Saltillo", "estado": "Coahuila", "codigo_postal": "25280", "coordenadas": { "latitud": 25.4267, "longitud": -100.9823 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-017", "marca": "Honda", "modelo": "HR-V", "año": 2024, "precio_mxn": 420000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.6, "fecha_apertura": "2011-04-18T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_018",
+    "nombre": "Mexicali Auto Zone",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Toyota", "Nissan", "Ford"],
+    "contacto": { "telefono": "+52 686 111 2222", "whatsapp": "+52 686 333 4444", "email": "info@mexicaliautozone.com", "sitio_web": "www.mexicaliautozone.com", "redes_sociales": { "facebook": "/MexicaliAutoZone", "instagram": "@mexicali_auto" } },
+    "ubicacion": { "direccion": "Calzada Justo Sierra 1200", "ciudad": "Mexicali", "estado": "Baja California", "codigo_postal": "21000", "coordenadas": { "latitud": 32.6245, "longitud": -115.4523 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Importación", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-018", "marca": "Nissan", "modelo": "Altima", "año": 2020, "precio_mxn": 380000.00, "estado": "Seminuevo", "kilometraje": 50000, "disponible": true }],
+    "calificacion_clientes": 3.8, "fecha_apertura": "2007-02-28T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_019",
+    "nombre": "Acapulco Auto Sun",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Volkswagen", "SEAT"],
+    "contacto": { "telefono": "+52 744 555 6666", "whatsapp": "+52 744 777 8888", "email": "contacto@acapulcoautosun.mx", "sitio_web": "www.acapulcoautosun.mx", "redes_sociales": { "facebook": "/AcapulcoAutoSun", "instagram": "@acapulco_autosun" } },
+    "ubicacion": { "direccion": "Av. Cuauhtémoc 800", "ciudad": "Acapulco", "estado": "Guerrero", "codigo_postal": "39690", "coordenadas": { "latitud": 16.8531, "longitud": -99.8237 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Financiamiento", "Seguros"],
+    "inventario": [{ "id_vehiculo": "VH-019", "marca": "Volkswagen", "modelo": "Jetta", "año": 2023, "precio_mxn": 380000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.3, "fecha_apertura": "2014-11-12T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_020",
+    "nombre": "Torreón Auto Link",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Chevrolet", "Buick", "Cadillac"],
+    "contacto": { "telefono": "+52 871 123 4567", "whatsapp": "+52 871 987 6543", "email": "ventas@torreonautolink.com", "sitio_web": "www.torreonautolink.com", "redes_sociales": { "facebook": "/TorreonAutoLink", "instagram": "@torreon_auto" } },
+    "ubicacion": { "direccion": "Blvd. Independencia 2000", "ciudad": "Torreón", "estado": "Coahuila", "codigo_postal": "27000", "coordenadas": { "latitud": 25.5428, "longitud": -103.4068 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Partes"],
+    "inventario": [{ "id_vehiculo": "VH-020", "marca": "Cadillac", "modelo": "XT5", "año": 2023, "precio_mxn": 1100000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.7, "fecha_apertura": "2017-09-05T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_021",
+    "nombre": "San Luis Auto Premium",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Mercedes-Benz", "BMW", "Audi"],
+    "contacto": { "telefono": "+52 444 111 2222", "whatsapp": "+52 444 333 4444", "email": "contacto@slpautopremium.mx", "sitio_web": "www.slpautopremium.mx", "redes_sociales": { "facebook": "/SLPAutoPremium", "instagram": "@slp_autopremium" } },
+    "ubicacion": { "direccion": "Av. Venustiano Carranza 1500", "ciudad": "San Luis Potosí", "estado": "San Luis Potosí", "codigo_postal": "78230", "coordenadas": { "latitud": 22.1565, "longitud": -100.9855 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos de lujo", "Seminuevos premium", "Asesoría personalizada"],
+    "inventario": [{ "id_vehiculo": "VH-021", "marca": "Mercedes-Benz", "modelo": "Clase C", "año": 2021, "precio_mxn": 850000.00, "estado": "Seminuevo", "kilometraje": 25000, "disponible": true }],
+    "calificacion_clientes": 4.8, "fecha_apertura": "2018-06-22T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_022",
+    "nombre": "Oaxaca Auto Mixteca",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Nissan", "Mitsubishi"],
+    "contacto": { "telefono": "+52 951 555 6666", "whatsapp": "+52 951 777 8888", "email": "ventas@oaxacaautomixteca.com", "sitio_web": "www.oaxacaautomixteca.com", "redes_sociales": { "facebook": "/OaxacaAutoMixteca", "instagram": "@oaxaca_auto" } },
+    "ubicacion": { "direccion": "Carretera Internacional Km 5", "ciudad": "Oaxaca de Juárez", "estado": "Oaxaca", "codigo_postal": "68000", "coordenadas": { "latitud": 17.0732, "longitud": -96.7266 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento", "Taller"],
+    "inventario": [{ "id_vehiculo": "VH-022", "marca": "Nissan", "modelo": "Kicks", "año": 2023, "precio_mxn": 350000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2013-01-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_023",
+    "nombre": "Tampico Auto Puerto",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Toyota", "Honda"],
+    "contacto": { "telefono": "+52 833 111 2222", "whatsapp": "+52 833 333 4444", "email": "info@tampicoautopuerto.mx", "sitio_web": "www.tampicoautopuerto.mx", "redes_sociales": { "facebook": "/TampicoAutoPuerto", "instagram": "@tampico_auto" } },
+    "ubicacion": { "direccion": "Blvd. Adolfo López Mateos 1200", "ciudad": "Tampico", "estado": "Tamaulipas", "codigo_postal": "89100", "coordenadas": { "latitud": 22.2331, "longitud": -97.8611 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos nuevos", "Seminuevos", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-023", "marca": "Toyota", "modelo": "Yaris", "año": 2022, "precio_mxn": 280000.00, "estado": "Seminuevo", "kilometraje": 30000, "disponible": true }],
+    "calificacion_clientes": 4.1, "fecha_apertura": "2015-08-30T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_024",
+    "nombre": "Tuxtla Auto Selva",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Ford", "Mazda"],
+    "contacto": { "telefono": "+52 961 555 6666", "whatsapp": "+52 961 777 8888", "email": "contacto@tuxtlautoselva.com", "sitio_web": "www.tuxtlautoselva.com", "redes_sociales": { "facebook": "/TuxtlaAutoSelva", "instagram": "@tuxtla_auto" } },
+    "ubicacion": { "direccion": "Blvd. Belisario Domínguez 1500", "ciudad": "Tuxtla Gutiérrez", "estado": "Chiapas", "codigo_postal": "29000", "coordenadas": { "latitud": 16.7528, "longitud": -93.1150 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Camionetas", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-024", "marca": "Ford", "modelo": "Explorer", "año": 2023, "precio_mxn": 950000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.4, "fecha_apertura": "2016-03-14T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_025",
+    "nombre": "Villahermosa Auto Tabasco",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Chevrolet", "Kia"],
+    "contacto": { "telefono": "+52 993 123 4567", "whatsapp": "+52 993 987 6543", "email": "ventas@villahermosaautotabasco.mx", "sitio_web": "www.villahermosaautotabasco.mx", "redes_sociales": { "facebook": "/VillahermosaAuto", "instagram": "@villa_auto" } },
+    "ubicacion": { "direccion": "Av. Adolfo Ruiz Cortines 2000", "ciudad": "Villahermosa", "estado": "Tabasco", "codigo_postal": "86000", "coordenadas": { "latitud": 17.9892, "longitud": -92.9475 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Refacciones", "Servicio"],
+    "inventario": [{ "id_vehiculo": "VH-025", "marca": "Chevrolet", "modelo": "Onix", "año": 2024, "precio_mxn": 290000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.2, "fecha_apertura": "2012-12-01T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_026",
+    "nombre": "La Paz Auto Baja",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Toyota", "Nissan", "Ford"],
+    "contacto": { "telefono": "+52 612 111 2222", "whatsapp": "+52 612 333 4444", "email": "info@lapazautobaja.com", "sitio_web": "www.lapazautobaja.com", "redes_sociales": { "facebook": "/LaPazAutoBaja", "instagram": "@lapaz_autobaja" } },
+    "ubicacion": { "direccion": "Blvd. Forjadores 500", "ciudad": "La Paz", "estado": "Baja California Sur", "codigo_postal": "23000", "coordenadas": { "latitud": 24.1426, "longitud": -110.3128 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos nuevos", "Seminuevos", "Importación"],
+    "inventario": [{ "id_vehiculo": "VH-026", "marca": "Toyota", "modelo": "RAV4", "año": 2022, "precio_mxn": 520000.00, "estado": "Seminuevo", "kilometraje": 25000, "disponible": true }],
+    "calificacion_clientes": 4.5, "fecha_apertura": "2010-05-10T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_027",
+    "nombre": "Campeche Auto Maya",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Honda", "Hyundai"],
+    "contacto": { "telefono": "+52 981 555 6666", "whatsapp": "+52 981 777 8888", "email": "ventas@campecheautomaya.mx", "sitio_web": "www.campecheautomaya.mx", "redes_sociales": { "facebook": "/CampecheAutoMaya", "instagram": "@campeche_auto" } },
+    "ubicacion": { "direccion": "Av. Ruiz Cortines 1200", "ciudad": "San Francisco de Campeche", "estado": "Campeche", "codigo_postal": "24000", "coordenadas": { "latitud": 19.8301, "longitud": -90.5349 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento", "Seguros"],
+    "inventario": [{ "id_vehiculo": "VH-027", "marca": "Honda", "modelo": "City", "año": 2023, "precio_mxn": 340000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.3, "fecha_apertura": "2014-07-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_028",
+    "nombre": "Zacatecas Auto Centro",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Volkswagen", "Mazda"],
+    "contacto": { "telefono": "+52 492 123 4567", "whatsapp": "+52 492 987 6543", "email": "contacto@zacatecasautocentro.com", "sitio_web": "www.zacatecasautocentro.com", "redes_sociales": { "facebook": "/ZacatecasAutoCentro", "instagram": "@zac_auto" } },
+    "ubicacion": { "direccion": "Blvd. López Portillo 1500", "ciudad": "Zacatecas", "estado": "Zacatecas", "codigo_postal": "98000", "coordenadas": { "latitud": 22.7709, "longitud": -102.5832 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "10:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos seminuevos", "Consignación", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-028", "marca": "Mazda", "modelo": "Mazda 6", "año": 2020, "precio_mxn": 350000.00, "estado": "Seminuevo", "kilometraje": 45000, "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2011-09-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_029",
+    "nombre": "Durango Auto Sierra",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Ford", "Lincoln"],
+    "contacto": { "telefono": "+52 618 111 2222", "whatsapp": "+52 618 333 4444", "email": "ventas@durangoautosierra.mx", "sitio_web": "www.durangoautosierra.mx", "redes_sociales": { "facebook": "/DurangoAutoSierra", "instagram": "@durango_auto" } },
+    "ubicacion": { "direccion": "Blvd. Domingo Arrieta 2000", "ciudad": "Durango", "estado": "Durango", "codigo_postal": "34000", "coordenadas": { "latitud": 24.0277, "longitud": -104.6532 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de camionetas", "Autos nuevos", "Taller"],
+    "inventario": [{ "id_vehiculo": "VH-029", "marca": "Ford", "modelo": "F-150", "año": 2023, "precio_mxn": 980000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.6, "fecha_apertura": "2015-02-18T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_030",
+    "nombre": "Tepic Auto Nayarit",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Nissan", "Kia", "Hyundai"],
+    "contacto": { "telefono": "+52 311 555 6666", "whatsapp": "+52 311 777 8888", "email": "info@tepicautonayarit.com", "sitio_web": "www.tepicautonayarit.com", "redes_sociales": { "facebook": "/TepicAutoNayarit", "instagram": "@tepic_auto" } },
+    "ubicacion": { "direccion": "Av. Insurgentes 800", "ciudad": "Tepic", "estado": "Nayarit", "codigo_postal": "63000", "coordenadas": { "latitud": 21.5041, "longitud": -104.8942 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Seminuevos", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-030", "marca": "Kia", "modelo": "Sportage", "año": 2023, "precio_mxn": 450000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.1, "fecha_apertura": "2013-06-25T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_031",
+    "nombre": "Colima Auto Pacífico",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Toyota", "Honda"],
+    "contacto": { "telefono": "+52 312 123 4567", "whatsapp": "+52 312 987 6543", "email": "ventas@colimaautopacifico.mx", "sitio_web": "www.colimaautopacifico.mx", "redes_sociales": { "facebook": "/ColimaAutoPacifico", "instagram": "@colima_auto" } },
+    "ubicacion": { "direccion": "Blvd. Camino Real 1200", "ciudad": "Colima", "estado": "Colima", "codigo_postal": "28000", "coordenadas": { "latitud": 19.2433, "longitud": -103.7250 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Seguros"],
+    "inventario": [{ "id_vehiculo": "VH-031", "marca": "Toyota", "modelo": "Camry", "año": 2023, "precio_mxn": 580000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.7, "fecha_apertura": "2016-11-08T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_032",
+    "nombre": "Tlaxcala Auto Centro",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Volkswagen", "SEAT"],
+    "contacto": { "telefono": "+52 246 111 2222", "whatsapp": "+52 246 333 4444", "email": "contacto@tlaxcalaautocentro.com", "sitio_web": "www.tlaxcalaautocentro.com", "redes_sociales": { "facebook": "/TlaxcalaAutoCentro", "instagram": "@tlax_auto" } },
+    "ubicacion": { "direccion": "Av. Juárez 1500", "ciudad": "Tlaxcala", "estado": "Tlaxcala", "codigo_postal": "90000", "coordenadas": { "latitud": 19.3182, "longitud": -98.2378 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Refacciones", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-032", "marca": "Volkswagen", "modelo": "Polo", "año": 2024, "precio_mxn": 310000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.2, "fecha_apertura": "2012-04-12T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_033",
+    "nombre": "Pachuca Auto Hidalgo",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Mazda", "Suzuki"],
+    "contacto": { "telefono": "+52 771 555 6666", "whatsapp": "+52 771 777 8888", "email": "info@pachucaautohidalgo.mx", "sitio_web": "www.pachucaautohidalgo.mx", "redes_sociales": { "facebook": "/PachucaAutoHidalgo", "instagram": "@pachuca_auto" } },
+    "ubicacion": { "direccion": "Blvd. Felipe Ángeles 2000", "ciudad": "Pachuca", "estado": "Hidalgo", "codigo_postal": "42000", "coordenadas": { "latitud": 20.1011, "longitud": -98.7591 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos seminuevos", "Consignación", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-033", "marca": "Suzuki", "modelo": "Swift", "año": 2022, "precio_mxn": 240000.00, "estado": "Seminuevo", "kilometraje": 22000, "disponible": true }],
+    "calificacion_clientes": 3.9, "fecha_apertura": "2014-10-05T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_034",
+    "nombre": "Chetumal Auto Caribe",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Nissan", "Chevrolet"],
+    "contacto": { "telefono": "+52 983 123 4567", "whatsapp": "+52 983 987 6543", "email": "ventas@chetumalautocaribe.mx", "sitio_web": "www.chetumalautocaribe.mx", "redes_sociales": { "facebook": "/ChetumalAutoCaribe", "instagram": "@chetumal_auto" } },
+    "ubicacion": { "direccion": "Av. Insurgentes 800", "ciudad": "Chetumal", "estado": "Quintana Roo", "codigo_postal": "77000", "coordenadas": { "latitud": 18.5001, "longitud": -88.2961 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento", "Taller"],
+    "inventario": [{ "id_vehiculo": "VH-034", "marca": "Nissan", "modelo": "March", "año": 2023, "precio_mxn": 230000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.4, "fecha_apertura": "2017-01-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_035",
+    "nombre": "Ensenada Auto Baja",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Ford", "Mazda", "Honda"],
+    "contacto": { "telefono": "+52 646 111 2222", "whatsapp": "+52 646 333 4444", "email": "info@ensenadaautobaja.com", "sitio_web": "www.ensenadaautobaja.com", "redes_sociales": { "facebook": "/EnsenadaAutoBaja", "instagram": "@ensenada_auto" } },
+    "ubicacion": { "direccion": "Blvd. Zertuche 1500", "ciudad": "Ensenada", "estado": "Baja California", "codigo_postal": "22800", "coordenadas": { "latitud": 31.8667, "longitud": -116.6000 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Seminuevos", "Importación"],
+    "inventario": [{ "id_vehiculo": "VH-035", "marca": "Honda", "modelo": "CR-V", "año": 2021, "precio_mxn": 420000.00, "estado": "Seminuevo", "kilometraje": 35000, "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2010-08-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_036",
+    "nombre": "Puerto Vallarta Auto",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Toyota", "Lexus"],
+    "contacto": { "telefono": "+52 322 555 6666", "whatsapp": "+52 322 777 8888", "email": "ventas@puertovallartaauto.mx", "sitio_web": "www.puertovallartaauto.mx", "redes_sociales": { "facebook": "/PuertoVallartaAuto", "instagram": "@pvr_auto" } },
+    "ubicacion": { "direccion": "Av. Francisco Medina Ascencio 2000", "ciudad": "Puerto Vallarta", "estado": "Jalisco", "codigo_postal": "48300", "coordenadas": { "latitud": 20.6324, "longitud": -105.2330 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Renta", "Servicio"],
+    "inventario": [{ "id_vehiculo": "VH-036", "marca": "Toyota", "modelo": "Tacoma", "año": 2023, "precio_mxn": 720000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.8, "fecha_apertura": "2015-06-12T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_037",
+    "nombre": "Los Cabos Auto Luxury",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["BMW", "Mercedes-Benz", "Audi"],
+    "contacto": { "telefono": "+52 624 123 4567", "whatsapp": "+52 624 987 6543", "email": "contacto@loscabosautoluxury.com", "sitio_web": "www.loscabosautoluxury.com", "redes_sociales": { "facebook": "/LosCabosAutoLuxury", "instagram": "@loscabos_auto" } },
+    "ubicacion": { "direccion": "Carretera Transpeninsular Km 5", "ciudad": "San José del Cabo", "estado": "Baja California Sur", "codigo_postal": "23400", "coordenadas": { "latitud": 23.0611, "longitud": -109.7011 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 20:00", "sabado": "10:00 - 18:00", "domingo": "10:00 - 14:00" },
+    "servicios_ofrecidos": ["Autos de lujo", "Concierge", "Financiamiento premium"],
+    "inventario": [{ "id_vehiculo": "VH-037", "marca": "BMW", "modelo": "X5", "año": 2024, "precio_mxn": 1600000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 5.0, "fecha_apertura": "2021-03-10T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_038",
+    "nombre": "Reynosa Auto Frontera",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Nissan", "Chevrolet", "Ford"],
+    "contacto": { "telefono": "+52 899 111 2222", "whatsapp": "+52 899 333 4444", "email": "info@reynosaautofrontera.mx", "sitio_web": "www.reynosaautofrontera.mx", "redes_sociales": { "facebook": "/ReynosaAutoFrontera", "instagram": "@reynosa_auto" } },
+    "ubicacion": { "direccion": "Blvd. Hidalgo 2000", "ciudad": "Reynosa", "estado": "Tamaulipas", "codigo_postal": "88500", "coordenadas": { "latitud": 26.0923, "longitud": -98.2745 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Seminuevos", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-038", "marca": "Chevrolet", "modelo": "Equinox", "año": 2022, "precio_mxn": 480000.00, "estado": "Seminuevo", "kilometraje": 28000, "disponible": true }],
+    "calificacion_clientes": 3.7, "fecha_apertura": "2009-11-11T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_039",
+    "nombre": "Irapuato Auto Bajío",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Mazda", "Volkswagen"],
+    "contacto": { "telefono": "+52 462 555 6666", "whatsapp": "+52 462 777 8888", "email": "ventas@irapuatoautobajio.com", "sitio_web": "www.irapuatoautobajio.com", "redes_sociales": { "facebook": "/IrapuatoAutoBajio", "instagram": "@irapuato_auto" } },
+    "ubicacion": { "direccion": "Blvd. Villas de Irapuato 1500", "ciudad": "Irapuato", "estado": "Guanajuato", "codigo_postal": "36600", "coordenadas": { "latitud": 20.6796, "longitud": -101.3545 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Financiamiento", "Refacciones"],
+    "inventario": [{ "id_vehiculo": "VH-039", "marca": "Mazda", "modelo": "CX-30", "año": 2023, "precio_mxn": 420000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.5, "fecha_apertura": "2013-02-18T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_040",
+    "nombre": "Celaya Auto Corredor",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Honda", "Kia"],
+    "contacto": { "telefono": "+52 461 123 4567", "whatsapp": "+52 461 987 6543", "email": "info@celayaautocorredor.com", "sitio_web": "www.celayaautocorredor.com", "redes_sociales": { "facebook": "/CelayaAutoCorredor", "instagram": "@celaya_auto" } },
+    "ubicacion": { "direccion": "Av. México-Japón 1200", "ciudad": "Celaya", "estado": "Guanajuato", "codigo_postal": "38000", "coordenadas": { "latitud": 20.5235, "longitud": -100.8153 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Seminuevos", "Autos nuevos", "Consignación"],
+    "inventario": [{ "id_vehiculo": "VH-040", "marca": "Honda", "modelo": "Accord", "año": 2021, "precio_mxn": 460000.00, "estado": "Seminuevo", "kilometraje": 30000, "disponible": true }],
+    "calificacion_clientes": 4.1, "fecha_apertura": "2015-07-22T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_041",
+    "nombre": "Mazatlán Auto Pacífico",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Toyota", "Nissan"],
+    "contacto": { "telefono": "+52 669 111 2222", "whatsapp": "+52 669 333 4444", "email": "ventas@mazatlanautopacifico.mx", "sitio_web": "www.mazatlanautopacifico.mx", "redes_sociales": { "facebook": "/MazatlanAutoPacifico", "instagram": "@mazatlan_auto" } },
+    "ubicacion": { "direccion": "Av. Rafael Buelna 2000", "ciudad": "Mazatlán", "estado": "Sinaloa", "codigo_postal": "82110", "coordenadas": { "latitud": 23.2494, "longitud": -106.4111 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-041", "marca": "Nissan", "modelo": "X-Trail", "año": 2023, "precio_mxn": 490000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.6, "fecha_apertura": "2012-05-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_042",
+    "nombre": "Orizaba Auto Montaña",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Ford", "Chevrolet"],
+    "contacto": { "telefono": "+52 272 555 6666", "whatsapp": "+52 272 777 8888", "email": "info@orizabaautomontana.com", "sitio_web": "www.orizabaautomontana.com", "redes_sociales": { "facebook": "/OrizabaAutoMontana", "instagram": "@orizaba_auto" } },
+    "ubicacion": { "direccion": "Av. Circunvalación 800", "ciudad": "Orizaba", "estado": "Veracruz", "codigo_postal": "94300", "coordenadas": { "latitud": 18.8519, "longitud": -97.1000 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Seminuevos", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-042", "marca": "Ford", "modelo": "Escape", "año": 2020, "precio_mxn": 380000.00, "estado": "Seminuevo", "kilometraje": 50000, "disponible": true }],
+    "calificacion_clientes": 3.8, "fecha_apertura": "2011-03-28T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_043",
+    "nombre": "Córdoba Auto Centro",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Volkswagen", "Audi"],
+    "contacto": { "telefono": "+52 271 123 4567", "whatsapp": "+52 271 987 6543", "email": "ventas@cordobaautocentro.mx", "sitio_web": "www.cordobaautocentro.mx", "redes_sociales": { "facebook": "/CordobaAutoCentro", "instagram": "@cordoba_auto" } },
+    "ubicacion": { "direccion": "Blvd. Tratados de Córdoba 1500", "ciudad": "Córdoba", "estado": "Veracruz", "codigo_postal": "94500", "coordenadas": { "latitud": 18.8849, "longitud": -96.9304 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Financiamiento", "Refacciones"],
+    "inventario": [{ "id_vehiculo": "VH-043", "marca": "Volkswagen", "modelo": "Tiguan", "año": 2023, "precio_mxn": 560000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.4, "fecha_apertura": "2016-09-12T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_044",
+    "nombre": "Camargo Auto Desierto",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Toyota", "Nissan", "Kia"],
+    "contacto": { "telefono": "+52 648 111 2222", "whatsapp": "+52 648 333 4444", "email": "contacto@camargoautodesierto.com", "sitio_web": "www.camargoautodesierto.com", "redes_sociales": { "facebook": "/CamargoAutoDesierto", "instagram": "@camargo_auto" } },
+    "ubicacion": { "direccion": "Av. Juárez 500", "ciudad": "Santa Rosalía de Camargo", "estado": "Chihuahua", "codigo_postal": "33700", "coordenadas": { "latitud": 27.6833, "longitud": -105.1667 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos seminuevos", "Camionetas", "Consignación"],
+    "inventario": [{ "id_vehiculo": "VH-044", "marca": "Toyota", "modelo": "Hilux", "año": 2020, "precio_mxn": 480000.00, "estado": "Seminuevo", "kilometraje": 60000, "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2014-12-01T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_045",
+    "nombre": "Monclova Auto Acero",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Ford", "Lincoln"],
+    "contacto": { "telefono": "+52 866 555 6666", "whatsapp": "+52 866 777 8888", "email": "ventas@monclovaautoacero.mx", "sitio_web": "www.monclovaautoacero.mx", "redes_sociales": { "facebook": "/MonclovaAutoAcero", "instagram": "@monclova_auto" } },
+    "ubicacion": { "direccion": "Blvd. Harold R. Pape 2000", "ciudad": "Monclova", "estado": "Coahuila", "codigo_postal": "25700", "coordenadas": { "latitud": 26.9070, "longitud": -101.4210 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Partes"],
+    "inventario": [{ "id_vehiculo": "VH-045", "marca": "Ford", "modelo": "Bronco", "año": 2023, "precio_mxn": 890000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.5, "fecha_apertura": "2017-04-20T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_046",
+    "nombre": "Nuevo Laredo Auto Frontera",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Chevrolet", "GMC"],
+    "contacto": { "telefono": "+52 867 123 4567", "whatsapp": "+52 867 987 6543", "email": "info@nuevolaredoautofrontera.mx", "sitio_web": "www.nuevolaredoautofrontera.mx", "redes_sociales": { "facebook": "/NuevoLaredoAuto", "instagram": "@nlaredo_auto" } },
+    "ubicacion": { "direccion": "Av. Reforma 1500", "ciudad": "Nuevo Laredo", "estado": "Tamaulipas", "codigo_postal": "88000", "coordenadas": { "latitud": 27.4861, "longitud": -99.5069 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos nuevos", "Seminuevos", "Trámites fronterizos"],
+    "inventario": [{ "id_vehiculo": "VH-046", "marca": "GMC", "modelo": "Sierra", "año": 2023, "precio_mxn": 1050000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.2, "fecha_apertura": "2011-10-10T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_047",
+    "nombre": "Zamora Auto Michoacán",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Nissan", "Mazda"],
+    "contacto": { "telefono": "+52 351 555 6666", "whatsapp": "+52 351 777 8888", "email": "contacto@zamoraautomichoacan.com", "sitio_web": "www.zamoraautomichoacan.com", "redes_sociales": { "facebook": "/ZamoraAutoMichoacan", "instagram": "@zamora_auto" } },
+    "ubicacion": { "direccion": "Av. Madero 800", "ciudad": "Zamora", "estado": "Michoacán", "codigo_postal": "59600", "coordenadas": { "latitud": 19.9856, "longitud": -102.2830 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:30 - 18:30", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos usados", "Seminuevos", "Financiamiento"],
+    "inventario": [{ "id_vehiculo": "VH-047", "marca": "Nissan", "modelo": "Versa", "año": 2021, "precio_mxn": 230000.00, "estado": "Seminuevo", "kilometraje": 45000, "disponible": true }],
+    "calificacion_clientes": 3.9, "fecha_apertura": "2012-07-15T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_048",
+    "nombre": "Tulancingo Auto Valle",
+    "tipo_agencia": "Concesionario Oficial",
+    "marcas_autorizadas": ["Honda", "Toyota"],
+    "contacto": { "telefono": "+52 775 111 2222", "whatsapp": "+52 775 333 4444", "email": "ventas@tulancingoautovalle.mx", "sitio_web": "www.tulancingoautovalle.mx", "redes_sociales": { "facebook": "/TulancingoAutoValle", "instagram": "@tulancingo_auto" } },
+    "ubicacion": { "direccion": "Blvd. Fernando Baeza 1200", "ciudad": "Tulancingo", "estado": "Hidalgo", "codigo_postal": "43600", "coordenadas": { "latitud": 20.0833, "longitud": -98.3667 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 19:00", "sabado": "10:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos nuevos", "Servicio", "Seguros"],
+    "inventario": [{ "id_vehiculo": "VH-048", "marca": "Honda", "modelo": "Fit", "año": 2023, "precio_mxn": 310000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.6, "fecha_apertura": "2018-08-25T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_049",
+    "nombre": "Coatzacoalcos Auto Golfo",
+    "tipo_agencia": "Distribuidor Autorizado",
+    "marcas_autorizadas": ["Volkswagen", "SEAT"],
+    "contacto": { "telefono": "+52 921 555 6666", "whatsapp": "+52 921 777 8888", "email": "info@coatzacoalcosautogolfo.com", "sitio_web": "www.coatzacoalcosautogolfo.com", "redes_sociales": { "facebook": "/CoatzaAutoGolfo", "instagram": "@coatza_auto" } },
+    "ubicacion": { "direccion": "Av. Universidad 2000", "ciudad": "Coatzacoalcos", "estado": "Veracruz", "codigo_postal": "96500", "coordenadas": { "latitud": 18.1333, "longitud": -94.4500 } },
+    "horarios_atencion": { "lunes_a_viernes": "09:00 - 18:00", "sabado": "09:00 - 14:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Venta de autos", "Refacciones", "Taller"],
+    "inventario": [{ "id_vehiculo": "VH-049", "marca": "Volkswagen", "modelo": "Virtus", "año": 2024, "precio_mxn": 350000.00, "estado": "Nuevo", "disponible": true }],
+    "calificacion_clientes": 4.3, "fecha_apertura": "2015-11-30T00:00:00Z", "activa": true
+  },
+  {
+    "_id": "agencia_050",
+    "nombre": "Los Mochis Auto Sinaloa",
+    "tipo_agencia": "Agencia Independiente",
+    "marcas_autorizadas": ["Ford", "Chevrolet", "Kia"],
+    "contacto": { "telefono": "+52 668 123 4567", "whatsapp": "+52 668 987 6543", "email": "contacto@losmochisautosinaloa.com", "sitio_web": "www.losmochisautosinaloa.com", "redes_sociales": { "facebook": "/LosMochisAutoSinaloa", "instagram": "@mochis_auto" } },
+    "ubicacion": { "direccion": "Blvd. Macario Gaxiola 1500", "ciudad": "Los Mochis", "estado": "Sinaloa", "codigo_postal": "81200", "coordenadas": { "latitud": 25.7900, "longitud": -108.9900 } },
+    "horarios_atencion": { "lunes_a_viernes": "08:00 - 18:00", "sabado": "09:00 - 15:00", "domingo": "Cerrado" },
+    "servicios_ofrecidos": ["Autos seminuevos", "Consignación", "Trámites"],
+    "inventario": [{ "id_vehiculo": "VH-050", "marca": "Kia", "modelo": "Forte", "año": 2022, "precio_mxn": 310000.00, "estado": "Seminuevo", "kilometraje": 25000, "disponible": true }],
+    "calificacion_clientes": 4.0, "fecha_apertura": "2013-09-14T00:00:00Z", "activa": true
+  }
+]
