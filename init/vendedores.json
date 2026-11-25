@@ -1,0 +1,1087 @@
+[
+  {
+    "_id": "vendedor_01",
+    "id_agencia": "agencia_001",
+    "nombre": "Carlos Mendoza",
+    "puesto": "Gerente de Ventas",
+    "email": "carlos@automaxpremium.com"
+  },
+  {
+    "_id": "vendedor_02",
+    "id_agencia": "agencia_001",
+    "nombre": "Ana López",
+    "puesto": "Asesora Comercial",
+    "email": "ana@automaxpremium.com"
+  },
+  {
+    "_id": "vendedor_03",
+    "id_agencia": "agencia_002",
+    "nombre": "Luis Ramírez",
+    "puesto": "Asesor Comercial",
+    "email": "luis@motorcitygdl.com"
+  },
+  {
+    "_id": "vendedor_04",
+    "id_agencia": "agencia_008",
+    "nombre": "Sofía Herrera",
+    "puesto": "Gerente Premium",
+    "email": "sofia@leonpremium.mx"
+  },
+  {
+    "_id": "vendedor_05",
+    "id_agencia": "agencia_001",
+    "nombre": "Regina Ortiz",
+    "puesto": "Asesora Comercial",
+    "email": "regina@automaxpremium.com"
+  },
+  {
+    "_id": "vendedor_06",
+    "id_agencia": "agencia_001",
+    "nombre": "Gabriel Guerrero",
+    "puesto": "Asesor de Ventas",
+    "email": "gabriel@automaxpremium.com"
+  },
+  {
+    "_id": "vendedor_07",
+    "id_agencia": "agencia_002",
+    "nombre": "Gabriela Reyes",
+    "puesto": "Gerente de Ventas",
+    "email": "gabriela@motorcitygdl.com"
+  },
+  {
+    "_id": "vendedor_08",
+    "id_agencia": "agencia_003",
+    "nombre": "Mónica Guerrero",
+    "puesto": "Gerente Premium",
+    "email": "monica@monterreyautogroup.mx"
+  },
+  {
+    "_id": "vendedor_09",
+    "id_agencia": "agencia_003",
+    "nombre": "Paola Domínguez",
+    "puesto": "Asesora Comercial",
+    "email": "paola@monterreyautogroup.mx"
+  },
+  {
+    "_id": "vendedor_10",
+    "id_agencia": "agencia_003",
+    "nombre": "Fernando Ruiz",
+    "puesto": "Asesor Comercial",
+    "email": "fernando@monterreyautogroup.mx"
+  },
+  {
+    "_id": "vendedor_100",
+    "id_agencia": "agencia_032",
+    "nombre": "Elena Estrada",
+    "puesto": "Asesora de Ventas",
+    "email": "elena@tlaxcalaautocentro.com"
+  },
+  {
+    "_id": "vendedor_101",
+    "id_agencia": "agencia_033",
+    "nombre": "Gabriela Navarro",
+    "puesto": "Gerente Comercial",
+    "email": "gabriela@pachucaautohidalgo.mx"
+  },
+  {
+    "_id": "vendedor_102",
+    "id_agencia": "agencia_033",
+    "nombre": "Mauricio Gómez",
+    "puesto": "Asesor de Ventas",
+    "email": "mauricio@pachucaautohidalgo.mx"
+  },
+  {
+    "_id": "vendedor_103",
+    "id_agencia": "agencia_033",
+    "nombre": "Arturo Fuentes",
+    "puesto": "Asesor Comercial",
+    "email": "arturo@pachucaautohidalgo.mx"
+  },
+  {
+    "_id": "vendedor_104",
+    "id_agencia": "agencia_034",
+    "nombre": "Jimena Torres",
+    "puesto": "Gerente de Ventas",
+    "email": "jimena@chetumalautocaribe.mx"
+  },
+  {
+    "_id": "vendedor_105",
+    "id_agencia": "agencia_034",
+    "nombre": "Daniela Medina",
+    "puesto": "Asesora Comercial",
+    "email": "daniela@chetumalautocaribe.mx"
+  },
+  {
+    "_id": "vendedor_106",
+    "id_agencia": "agencia_034",
+    "nombre": "Silvia Cabrera",
+    "puesto": "Ejecutiva de Ventas",
+    "email": "silvia@chetumalautocaribe.mx"
+  },
+  {
+    "_id": "vendedor_107",
+    "id_agencia": "agencia_034",
+    "nombre": "Karla Cruz",
+    "puesto": "Ejecutiva de Ventas",
+    "email": "karla@chetumalautocaribe.mx"
+  },
+  {
+    "_id": "vendedor_108",
+    "id_agencia": "agencia_035",
+    "nombre": "Gerardo Hernández",
+    "puesto": "Gerente Comercial",
+    "email": "gerardo@ensenadaautobaja.com"
+  },
+  {
+    "_id": "vendedor_109",
+    "id_agencia": "agencia_035",
+    "nombre": "Jimena Salazar",
+    "puesto": "Asesora Comercial",
+    "email": "jimena@ensenadaautobaja.com"
+  },
+  {
+    "_id": "vendedor_11",
+    "id_agencia": "agencia_004",
+    "nombre": "Eduardo Hernández",
+    "puesto": "Gerente Premium",
+    "email": "eduardo@pueblamotors.com"
+  },
+  {
+    "_id": "vendedor_110",
+    "id_agencia": "agencia_036",
+    "nombre": "Patricia Aguilar",
+    "puesto": "Gerente Premium",
+    "email": "patricia@puertovallartaauto.mx"
+  },
+  {
+    "_id": "vendedor_111",
+    "id_agencia": "agencia_036",
+    "nombre": "Iván Estrada",
+    "puesto": "Asesor de Ventas",
+    "email": "ivan@puertovallartaauto.mx"
+  },
+  {
+    "_id": "vendedor_112",
+    "id_agencia": "agencia_036",
+    "nombre": "Emilio Navarro",
+    "puesto": "Asesor Premium",
+    "email": "emilio@puertovallartaauto.mx"
+  },
+  {
+    "_id": "vendedor_113",
+    "id_agencia": "agencia_036",
+    "nombre": "Verónica Medina",
+    "puesto": "Asesora Comercial",
+    "email": "veronica@puertovallartaauto.mx"
+  },
+  {
+    "_id": "vendedor_114",
+    "id_agencia": "agencia_036",
+    "nombre": "Javier Salazar",
+    "puesto": "Asesor Comercial",
+    "email": "javier@puertovallartaauto.mx"
+  },
+  {
+    "_id": "vendedor_115",
+    "id_agencia": "agencia_037",
+    "nombre": "Alejandra Ramos",
+    "puesto": "Gerente Premium",
+    "email": "alejandra@loscabosautoluxury.com"
+  },
+  {
+    "_id": "vendedor_116",
+    "id_agencia": "agencia_037",
+    "nombre": "Jorge Pérez",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "jorge@loscabosautoluxury.com"
+  },
+  {
+    "_id": "vendedor_117",
+    "id_agencia": "agencia_037",
+    "nombre": "Rodrigo Díaz",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "rodrigo@loscabosautoluxury.com"
+  },
+  {
+    "_id": "vendedor_118",
+    "id_agencia": "agencia_038",
+    "nombre": "Sergio Herrera",
+    "puesto": "Gerente de Ventas",
+    "email": "sergio@reynosaautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_119",
+    "id_agencia": "agencia_038",
+    "nombre": "Raúl Domínguez",
+    "puesto": "Asesor Comercial",
+    "email": "raul@reynosaautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_12",
+    "id_agencia": "agencia_004",
+    "nombre": "Laura Castillo",
+    "puesto": "Asesora Premium",
+    "email": "laura@pueblamotors.com"
+  },
+  {
+    "_id": "vendedor_120",
+    "id_agencia": "agencia_038",
+    "nombre": "Hugo Cabrera",
+    "puesto": "Asesor Comercial",
+    "email": "hugo@reynosaautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_121",
+    "id_agencia": "agencia_039",
+    "nombre": "Karla Álvarez",
+    "puesto": "Gerente de Ventas",
+    "email": "karla@irapuatoautobajio.com"
+  },
+  {
+    "_id": "vendedor_122",
+    "id_agencia": "agencia_039",
+    "nombre": "Fernanda Ruiz",
+    "puesto": "Asesora de Ventas",
+    "email": "fernanda@irapuatoautobajio.com"
+  },
+  {
+    "_id": "vendedor_123",
+    "id_agencia": "agencia_039",
+    "nombre": "Carolina Romero",
+    "puesto": "Asesora de Ventas",
+    "email": "carolina@irapuatoautobajio.com"
+  },
+  {
+    "_id": "vendedor_124",
+    "id_agencia": "agencia_040",
+    "nombre": "Iván López",
+    "puesto": "Gerente Comercial",
+    "email": "ivan@celayaautocorredor.com"
+  },
+  {
+    "_id": "vendedor_125",
+    "id_agencia": "agencia_040",
+    "nombre": "Gabriel López",
+    "puesto": "Asesor de Ventas",
+    "email": "gabriel@celayaautocorredor.com"
+  },
+  {
+    "_id": "vendedor_126",
+    "id_agencia": "agencia_041",
+    "nombre": "Fernando Herrera",
+    "puesto": "Gerente Comercial",
+    "email": "fernando@mazatlanautopacifico.mx"
+  },
+  {
+    "_id": "vendedor_127",
+    "id_agencia": "agencia_041",
+    "nombre": "Alejandra Vargas",
+    "puesto": "Asesora de Ventas",
+    "email": "alejandra@mazatlanautopacifico.mx"
+  },
+  {
+    "_id": "vendedor_128",
+    "id_agencia": "agencia_042",
+    "nombre": "Adrián Álvarez",
+    "puesto": "Gerente Comercial",
+    "email": "adrian@orizabaautomontana.com"
+  },
+  {
+    "_id": "vendedor_129",
+    "id_agencia": "agencia_042",
+    "nombre": "Emilio Guerrero",
+    "puesto": "Asesor de Ventas",
+    "email": "emilio@orizabaautomontana.com"
+  },
+  {
+    "_id": "vendedor_13",
+    "id_agencia": "agencia_005",
+    "nombre": "Emilio Aguilar",
+    "puesto": "Gerente de Ventas",
+    "email": "emilio@queretaroautos.mx"
+  },
+  {
+    "_id": "vendedor_130",
+    "id_agencia": "agencia_042",
+    "nombre": "María Ramírez",
+    "puesto": "Asesora Comercial",
+    "email": "maria@orizabaautomontana.com"
+  },
+  {
+    "_id": "vendedor_131",
+    "id_agencia": "agencia_043",
+    "nombre": "Manuel Sánchez",
+    "puesto": "Gerente Premium",
+    "email": "manuel@cordobaautocentro.mx"
+  },
+  {
+    "_id": "vendedor_132",
+    "id_agencia": "agencia_043",
+    "nombre": "Andrea Rodríguez",
+    "puesto": "Asesora Comercial",
+    "email": "andrea@cordobaautocentro.mx"
+  },
+  {
+    "_id": "vendedor_133",
+    "id_agencia": "agencia_044",
+    "nombre": "Hugo Jiménez",
+    "puesto": "Gerente de Ventas",
+    "email": "hugo@camargoautodesierto.com"
+  },
+  {
+    "_id": "vendedor_134",
+    "id_agencia": "agencia_044",
+    "nombre": "Emilio Rodríguez",
+    "puesto": "Asesor Comercial",
+    "email": "emilio@camargoautodesierto.com"
+  },
+  {
+    "_id": "vendedor_135",
+    "id_agencia": "agencia_044",
+    "nombre": "Miguel Domínguez",
+    "puesto": "Asesor de Ventas",
+    "email": "miguel@camargoautodesierto.com"
+  },
+  {
+    "_id": "vendedor_136",
+    "id_agencia": "agencia_045",
+    "nombre": "Raúl Romero",
+    "puesto": "Gerente Premium",
+    "email": "raul@monclovaautoacero.mx"
+  },
+  {
+    "_id": "vendedor_137",
+    "id_agencia": "agencia_045",
+    "nombre": "Alejandro García",
+    "puesto": "Asesor Premium",
+    "email": "alejandro@monclovaautoacero.mx"
+  },
+  {
+    "_id": "vendedor_138",
+    "id_agencia": "agencia_045",
+    "nombre": "Itzel Chávez",
+    "puesto": "Asesora Premium",
+    "email": "itzel@monclovaautoacero.mx"
+  },
+  {
+    "_id": "vendedor_139",
+    "id_agencia": "agencia_046",
+    "nombre": "Elena Ramírez",
+    "puesto": "Gerente Comercial",
+    "email": "elena@nuevolaredoautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_14",
+    "id_agencia": "agencia_005",
+    "nombre": "Raúl Martínez",
+    "puesto": "Asesor de Ventas",
+    "email": "raul@queretaroautos.mx"
+  },
+  {
+    "_id": "vendedor_140",
+    "id_agencia": "agencia_046",
+    "nombre": "Gabriel Jiménez",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "gabriel@nuevolaredoautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_141",
+    "id_agencia": "agencia_046",
+    "nombre": "Natalia Álvarez",
+    "puesto": "Asesora Comercial",
+    "email": "natalia@nuevolaredoautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_142",
+    "id_agencia": "agencia_046",
+    "nombre": "Mariana Aguilar",
+    "puesto": "Asesora de Ventas",
+    "email": "mariana@nuevolaredoautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_143",
+    "id_agencia": "agencia_046",
+    "nombre": "Diana Ortiz",
+    "puesto": "Asesora de Ventas",
+    "email": "diana@nuevolaredoautofrontera.mx"
+  },
+  {
+    "_id": "vendedor_144",
+    "id_agencia": "agencia_047",
+    "nombre": "Regina Domínguez",
+    "puesto": "Gerente Comercial",
+    "email": "regina@zamoraautomichoacan.com"
+  },
+  {
+    "_id": "vendedor_145",
+    "id_agencia": "agencia_047",
+    "nombre": "Daniela Martínez",
+    "puesto": "Asesora de Ventas",
+    "email": "daniela@zamoraautomichoacan.com"
+  },
+  {
+    "_id": "vendedor_146",
+    "id_agencia": "agencia_047",
+    "nombre": "Paola Cabrera",
+    "puesto": "Asesora de Ventas",
+    "email": "paola@zamoraautomichoacan.com"
+  },
+  {
+    "_id": "vendedor_147",
+    "id_agencia": "agencia_048",
+    "nombre": "Natalia Ramos",
+    "puesto": "Gerente de Ventas",
+    "email": "natalia@tulancingoautovalle.mx"
+  },
+  {
+    "_id": "vendedor_148",
+    "id_agencia": "agencia_048",
+    "nombre": "Mariana Morales",
+    "puesto": "Asesora de Ventas",
+    "email": "mariana@tulancingoautovalle.mx"
+  },
+  {
+    "_id": "vendedor_149",
+    "id_agencia": "agencia_048",
+    "nombre": "Diego Torres",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "diego@tulancingoautovalle.mx"
+  },
+  {
+    "_id": "vendedor_15",
+    "id_agencia": "agencia_005",
+    "nombre": "Rodrigo García",
+    "puesto": "Asesor Comercial",
+    "email": "rodrigo@queretaroautos.mx"
+  },
+  {
+    "_id": "vendedor_150",
+    "id_agencia": "agencia_049",
+    "nombre": "Brenda Cruz",
+    "puesto": "Gerente Comercial",
+    "email": "brenda@coatzacoalcosautogolfo.com"
+  },
+  {
+    "_id": "vendedor_151",
+    "id_agencia": "agencia_049",
+    "nombre": "Pablo Mendez",
+    "puesto": "Asesor Comercial",
+    "email": "pablo@coatzacoalcosautogolfo.com"
+  },
+  {
+    "_id": "vendedor_152",
+    "id_agencia": "agencia_049",
+    "nombre": "Claudia Domínguez",
+    "puesto": "Asesora de Ventas",
+    "email": "claudia@coatzacoalcosautogolfo.com"
+  },
+  {
+    "_id": "vendedor_153",
+    "id_agencia": "agencia_050",
+    "nombre": "Iván Vargas",
+    "puesto": "Gerente Comercial",
+    "email": "ivan@losmochisautosinaloa.com"
+  },
+  {
+    "_id": "vendedor_154",
+    "id_agencia": "agencia_050",
+    "nombre": "Javier Chávez",
+    "puesto": "Asesor Comercial",
+    "email": "javier@losmochisautosinaloa.com"
+  },
+  {
+    "_id": "vendedor_155",
+    "id_agencia": "agencia_050",
+    "nombre": "Eduardo Rodríguez",
+    "puesto": "Asesor Comercial",
+    "email": "eduardo@losmochisautosinaloa.com"
+  },
+  {
+    "_id": "vendedor_16",
+    "id_agencia": "agencia_006",
+    "nombre": "María Reyes",
+    "puesto": "Gerente de Ventas",
+    "email": "maria@meridacarcenter.com"
+  },
+  {
+    "_id": "vendedor_17",
+    "id_agencia": "agencia_006",
+    "nombre": "Paola Jiménez",
+    "puesto": "Asesora de Ventas",
+    "email": "paola@meridacarcenter.com"
+  },
+  {
+    "_id": "vendedor_18",
+    "id_agencia": "agencia_006",
+    "nombre": "Fernanda García",
+    "puesto": "Asesora Comercial",
+    "email": "fernanda@meridacarcenter.com"
+  },
+  {
+    "_id": "vendedor_19",
+    "id_agencia": "agencia_006",
+    "nombre": "Roberto Gómez",
+    "puesto": "Asesor de Ventas",
+    "email": "roberto@meridacarcenter.com"
+  },
+  {
+    "_id": "vendedor_20",
+    "id_agencia": "agencia_006",
+    "nombre": "Arturo Ibarra",
+    "puesto": "Asesor de Ventas",
+    "email": "arturo@meridacarcenter.com"
+  },
+  {
+    "_id": "vendedor_21",
+    "id_agencia": "agencia_007",
+    "nombre": "Luis Reyes",
+    "puesto": "Gerente de Ventas",
+    "email": "luis@tijuanautoimport.com"
+  },
+  {
+    "_id": "vendedor_22",
+    "id_agencia": "agencia_007",
+    "nombre": "Raúl Ortiz",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "raul@tijuanautoimport.com"
+  },
+  {
+    "_id": "vendedor_23",
+    "id_agencia": "agencia_007",
+    "nombre": "Eduardo Díaz",
+    "puesto": "Asesor de Ventas",
+    "email": "eduardo@tijuanautoimport.com"
+  },
+  {
+    "_id": "vendedor_24",
+    "id_agencia": "agencia_007",
+    "nombre": "Arturo Aguilar",
+    "puesto": "Asesor Comercial",
+    "email": "arturo@tijuanautoimport.com"
+  },
+  {
+    "_id": "vendedor_25",
+    "id_agencia": "agencia_007",
+    "nombre": "Rocío Guerrero",
+    "puesto": "Asesora de Ventas",
+    "email": "rocio@tijuanautoimport.com"
+  },
+  {
+    "_id": "vendedor_26",
+    "id_agencia": "agencia_008",
+    "nombre": "Daniela Pérez",
+    "puesto": "Asesora Comercial",
+    "email": "daniela@leonpremium.mx"
+  },
+  {
+    "_id": "vendedor_27",
+    "id_agencia": "agencia_008",
+    "nombre": "Gerardo Rodríguez",
+    "puesto": "Asesor de Ventas",
+    "email": "gerardo@leonpremium.mx"
+  },
+  {
+    "_id": "vendedor_28",
+    "id_agencia": "agencia_009",
+    "nombre": "Manuel García",
+    "puesto": "Gerente Comercial",
+    "email": "manuel@culiacanmotors.com"
+  },
+  {
+    "_id": "vendedor_29",
+    "id_agencia": "agencia_009",
+    "nombre": "Paola Salazar",
+    "puesto": "Asesora Comercial",
+    "email": "paola@culiacanmotors.com"
+  },
+  {
+    "_id": "vendedor_30",
+    "id_agencia": "agencia_009",
+    "nombre": "Miguel Guerrero",
+    "puesto": "Asesor de Ventas",
+    "email": "miguel@culiacanmotors.com"
+  },
+  {
+    "_id": "vendedor_31",
+    "id_agencia": "agencia_009",
+    "nombre": "Lucía Gómez",
+    "puesto": "Asesora de Ventas",
+    "email": "lucia@culiacanmotors.com"
+  },
+  {
+    "_id": "vendedor_32",
+    "id_agencia": "agencia_009",
+    "nombre": "Hugo Flores",
+    "puesto": "Asesor Comercial",
+    "email": "hugo@culiacanmotors.com"
+  },
+  {
+    "_id": "vendedor_33",
+    "id_agencia": "agencia_010",
+    "nombre": "Adrián Navarro",
+    "puesto": "Gerente de Ventas",
+    "email": "adrian@chihuahuaautoplaza.mx"
+  },
+  {
+    "_id": "vendedor_34",
+    "id_agencia": "agencia_010",
+    "nombre": "Brenda Gómez",
+    "puesto": "Asesora Comercial",
+    "email": "brenda@chihuahuaautoplaza.mx"
+  },
+  {
+    "_id": "vendedor_35",
+    "id_agencia": "agencia_010",
+    "nombre": "Pablo López",
+    "puesto": "Asesor de Ventas",
+    "email": "pablo@chihuahuaautoplaza.mx"
+  },
+  {
+    "_id": "vendedor_36",
+    "id_agencia": "agencia_010",
+    "nombre": "Adrián Chávez",
+    "puesto": "Asesor Comercial",
+    "email": "adrian.chavez@chihuahuaautoplaza.mx"
+  },
+  {
+    "_id": "vendedor_37",
+    "id_agencia": "agencia_010",
+    "nombre": "Jorge Martínez",
+    "puesto": "Asesor Comercial",
+    "email": "jorge@chihuahuaautoplaza.mx"
+  },
+  {
+    "_id": "vendedor_38",
+    "id_agencia": "agencia_011",
+    "nombre": "Ricardo Pérez",
+    "puesto": "Gerente Premium",
+    "email": "ricardo@cancunautoexp.com"
+  },
+  {
+    "_id": "vendedor_39",
+    "id_agencia": "agencia_011",
+    "nombre": "Iván Gómez",
+    "puesto": "Asesor Premium",
+    "email": "ivan@cancunautoexp.com"
+  },
+  {
+    "_id": "vendedor_40",
+    "id_agencia": "agencia_011",
+    "nombre": "Gabriela Guerrero",
+    "puesto": "Asesora Premium",
+    "email": "gabriela@cancunautoexp.com"
+  },
+  {
+    "_id": "vendedor_41",
+    "id_agencia": "agencia_011",
+    "nombre": "Claudia Romero",
+    "puesto": "Asesora Premium",
+    "email": "claudia@cancunautoexp.com"
+  },
+  {
+    "_id": "vendedor_42",
+    "id_agencia": "agencia_011",
+    "nombre": "Silvia Salazar",
+    "puesto": "Asesora Comercial",
+    "email": "silvia@cancunautoexp.com"
+  },
+  {
+    "_id": "vendedor_43",
+    "id_agencia": "agencia_012",
+    "nombre": "Ana Domínguez",
+    "puesto": "Gerente Premium",
+    "email": "ana@tolucaautomarket.com"
+  },
+  {
+    "_id": "vendedor_44",
+    "id_agencia": "agencia_012",
+    "nombre": "Óscar Reyes",
+    "puesto": "Asesor Comercial",
+    "email": "oscar@tolucaautomarket.com"
+  },
+  {
+    "_id": "vendedor_45",
+    "id_agencia": "agencia_013",
+    "nombre": "Sofía Vargas",
+    "puesto": "Gerente Premium",
+    "email": "sofia@veracruzautocenter.mx"
+  },
+  {
+    "_id": "vendedor_46",
+    "id_agencia": "agencia_013",
+    "nombre": "Daniela Ortiz",
+    "puesto": "Asesora Comercial",
+    "email": "daniela@veracruzautocenter.mx"
+  },
+  {
+    "_id": "vendedor_47",
+    "id_agencia": "agencia_014",
+    "nombre": "Beatriz Cabrera",
+    "puesto": "Gerente Comercial",
+    "email": "beatriz@aguascalientesmotors.com"
+  },
+  {
+    "_id": "vendedor_48",
+    "id_agencia": "agencia_014",
+    "nombre": "Andrea Álvarez",
+    "puesto": "Asesora Comercial",
+    "email": "andrea@aguascalientesmotors.com"
+  },
+  {
+    "_id": "vendedor_49",
+    "id_agencia": "agencia_014",
+    "nombre": "Héctor Ruiz",
+    "puesto": "Asesor Comercial",
+    "email": "hector@aguascalientesmotors.com"
+  },
+  {
+    "_id": "vendedor_50",
+    "id_agencia": "agencia_015",
+    "nombre": "Arturo Hernández",
+    "puesto": "Gerente de Ventas",
+    "email": "arturo@hermosilloautonation.mx"
+  },
+  {
+    "_id": "vendedor_51",
+    "id_agencia": "agencia_015",
+    "nombre": "Alejandra Hernández",
+    "puesto": "Asesora Comercial",
+    "email": "alejandra@hermosilloautonation.mx"
+  },
+  {
+    "_id": "vendedor_52",
+    "id_agencia": "agencia_015",
+    "nombre": "Ricardo Ruiz",
+    "puesto": "Asesor de Ventas",
+    "email": "ricardo@hermosilloautonation.mx"
+  },
+  {
+    "_id": "vendedor_53",
+    "id_agencia": "agencia_015",
+    "nombre": "Beatriz García",
+    "puesto": "Asesora Comercial",
+    "email": "beatriz@hermosilloautonation.mx"
+  },
+  {
+    "_id": "vendedor_54",
+    "id_agencia": "agencia_016",
+    "nombre": "Iván Mendoza",
+    "puesto": "Gerente de Ventas",
+    "email": "ivan@moreliacargallery.com"
+  },
+  {
+    "_id": "vendedor_55",
+    "id_agencia": "agencia_016",
+    "nombre": "Gerardo Cruz",
+    "puesto": "Asesor de Ventas",
+    "email": "gerardo@moreliacargallery.com"
+  },
+  {
+    "_id": "vendedor_56",
+    "id_agencia": "agencia_017",
+    "nombre": "Karla Herrera",
+    "puesto": "Gerente Premium",
+    "email": "karla@saltilloautogroup.mx"
+  },
+  {
+    "_id": "vendedor_57",
+    "id_agencia": "agencia_017",
+    "nombre": "Ana Moreno",
+    "puesto": "Asesora de Ventas",
+    "email": "ana@saltilloautogroup.mx"
+  },
+  {
+    "_id": "vendedor_58",
+    "id_agencia": "agencia_017",
+    "nombre": "Itzel Ibarra",
+    "puesto": "Asesora de Ventas",
+    "email": "itzel@saltilloautogroup.mx"
+  },
+  {
+    "_id": "vendedor_59",
+    "id_agencia": "agencia_018",
+    "nombre": "Gabriela Herrera",
+    "puesto": "Gerente de Ventas",
+    "email": "gabriela@mexicaliautozone.com"
+  },
+  {
+    "_id": "vendedor_60",
+    "id_agencia": "agencia_018",
+    "nombre": "Luis Herrera",
+    "puesto": "Asesor Comercial",
+    "email": "luis@mexicaliautozone.com"
+  },
+  {
+    "_id": "vendedor_61",
+    "id_agencia": "agencia_019",
+    "nombre": "Jorge Flores",
+    "puesto": "Gerente de Ventas",
+    "email": "jorge@acapulcoautosun.mx"
+  },
+  {
+    "_id": "vendedor_62",
+    "id_agencia": "agencia_019",
+    "nombre": "Gabriel Cruz",
+    "puesto": "Asesor Comercial",
+    "email": "gabriel@acapulcoautosun.mx"
+  },
+  {
+    "_id": "vendedor_63",
+    "id_agencia": "agencia_020",
+    "nombre": "Manuel Martínez",
+    "puesto": "Gerente Premium",
+    "email": "manuel@torreonautolink.com"
+  },
+  {
+    "_id": "vendedor_64",
+    "id_agencia": "agencia_020",
+    "nombre": "Elena Cabrera",
+    "puesto": "Asesora de Ventas",
+    "email": "elena@torreonautolink.com"
+  },
+  {
+    "_id": "vendedor_65",
+    "id_agencia": "agencia_020",
+    "nombre": "Itzel Ramos",
+    "puesto": "Asesora de Ventas",
+    "email": "itzel@torreonautolink.com"
+  },
+  {
+    "_id": "vendedor_66",
+    "id_agencia": "agencia_021",
+    "nombre": "Daniel Aguilar",
+    "puesto": "Gerente Premium",
+    "email": "daniel@slpautopremium.mx"
+  },
+  {
+    "_id": "vendedor_67",
+    "id_agencia": "agencia_021",
+    "nombre": "Brenda García",
+    "puesto": "Asesora Comercial",
+    "email": "brenda@slpautopremium.mx"
+  },
+  {
+    "_id": "vendedor_68",
+    "id_agencia": "agencia_022",
+    "nombre": "Diego Morales",
+    "puesto": "Gerente de Ventas",
+    "email": "diego@oaxacaautomixteca.com"
+  },
+  {
+    "_id": "vendedor_69",
+    "id_agencia": "agencia_022",
+    "nombre": "Cristian García",
+    "puesto": "Asesor de Ventas",
+    "email": "cristian@oaxacaautomixteca.com"
+  },
+  {
+    "_id": "vendedor_70",
+    "id_agencia": "agencia_023",
+    "nombre": "Adriana Guerrero",
+    "puesto": "Gerente Comercial",
+    "email": "adriana@tampicoautopuerto.mx"
+  },
+  {
+    "_id": "vendedor_71",
+    "id_agencia": "agencia_023",
+    "nombre": "Mauricio Salazar",
+    "puesto": "Ejecutivo de Ventas",
+    "email": "mauricio@tampicoautopuerto.mx"
+  },
+  {
+    "_id": "vendedor_72",
+    "id_agencia": "agencia_023",
+    "nombre": "Carolina Hernández",
+    "puesto": "Asesora Comercial",
+    "email": "carolina@tampicoautopuerto.mx"
+  },
+  {
+    "_id": "vendedor_73",
+    "id_agencia": "agencia_024",
+    "nombre": "Laura Ibarra",
+    "puesto": "Gerente de Ventas",
+    "email": "laura@tuxtlautoselva.com"
+  },
+  {
+    "_id": "vendedor_74",
+    "id_agencia": "agencia_024",
+    "nombre": "Valeria Díaz",
+    "puesto": "Asesora Comercial",
+    "email": "valeria@tuxtlautoselva.com"
+  },
+  {
+    "_id": "vendedor_75",
+    "id_agencia": "agencia_024",
+    "nombre": "Gerardo Morales",
+    "puesto": "Asesor de Ventas",
+    "email": "gerardo@tuxtlautoselva.com"
+  },
+  {
+    "_id": "vendedor_76",
+    "id_agencia": "agencia_025",
+    "nombre": "Mónica Ruiz",
+    "puesto": "Gerente Comercial",
+    "email": "monica@villahermosaautotabasco.mx"
+  },
+  {
+    "_id": "vendedor_77",
+    "id_agencia": "agencia_025",
+    "nombre": "Alejandra Pérez",
+    "puesto": "Asesora de Ventas",
+    "email": "alejandra@villahermosaautotabasco.mx"
+  },
+  {
+    "_id": "vendedor_78",
+    "id_agencia": "agencia_025",
+    "nombre": "Paola Ibarra",
+    "puesto": "Asesora Comercial",
+    "email": "paola@villahermosaautotabasco.mx"
+  },
+  {
+    "_id": "vendedor_79",
+    "id_agencia": "agencia_025",
+    "nombre": "Silvia Sánchez",
+    "puesto": "Asesora de Ventas",
+    "email": "silvia@villahermosaautotabasco.mx"
+  },
+  {
+    "_id": "vendedor_80",
+    "id_agencia": "agencia_025",
+    "nombre": "Ricardo Ramírez",
+    "puesto": "Asesor Comercial",
+    "email": "ricardo@villahermosaautotabasco.mx"
+  },
+  {
+    "_id": "vendedor_81",
+    "id_agencia": "agencia_026",
+    "nombre": "Daniela Hernández",
+    "puesto": "Gerente Comercial",
+    "email": "daniela@lapazautobaja.com"
+  },
+  {
+    "_id": "vendedor_82",
+    "id_agencia": "agencia_026",
+    "nombre": "Cristian Álvarez",
+    "puesto": "Asesor Comercial",
+    "email": "cristian@lapazautobaja.com"
+  },
+  {
+    "_id": "vendedor_83",
+    "id_agencia": "agencia_026",
+    "nombre": "Mauricio Flores",
+    "puesto": "Asesor Comercial",
+    "email": "mauricio@lapazautobaja.com"
+  },
+  {
+    "_id": "vendedor_84",
+    "id_agencia": "agencia_027",
+    "nombre": "Eduardo Álvarez",
+    "puesto": "Gerente de Ventas",
+    "email": "eduardo@campecheautomaya.mx"
+  },
+  {
+    "_id": "vendedor_85",
+    "id_agencia": "agencia_027",
+    "nombre": "Jimena Hernández",
+    "puesto": "Asesora Comercial",
+    "email": "jimena@campecheautomaya.mx"
+  },
+  {
+    "_id": "vendedor_86",
+    "id_agencia": "agencia_028",
+    "nombre": "Gabriela Aguilar",
+    "puesto": "Gerente Comercial",
+    "email": "gabriela@zacatecasautocentro.com"
+  },
+  {
+    "_id": "vendedor_87",
+    "id_agencia": "agencia_028",
+    "nombre": "Jimena Reyes",
+    "puesto": "Asesora Comercial",
+    "email": "jimena@zacatecasautocentro.com"
+  },
+  {
+    "_id": "vendedor_88",
+    "id_agencia": "agencia_028",
+    "nombre": "Brenda Ortiz",
+    "puesto": "Asesora de Ventas",
+    "email": "brenda@zacatecasautocentro.com"
+  },
+  {
+    "_id": "vendedor_89",
+    "id_agencia": "agencia_028",
+    "nombre": "Adrián Guerrero",
+    "puesto": "Asesor Comercial",
+    "email": "adrian@zacatecasautocentro.com"
+  },
+  {
+    "_id": "vendedor_90",
+    "id_agencia": "agencia_028",
+    "nombre": "Fernanda Flores",
+    "puesto": "Asesora de Ventas",
+    "email": "fernanda@zacatecasautocentro.com"
+  },
+  {
+    "_id": "vendedor_91",
+    "id_agencia": "agencia_029",
+    "nombre": "Lucía Castillo",
+    "puesto": "Gerente Premium",
+    "email": "lucia@durangoautosierra.mx"
+  },
+  {
+    "_id": "vendedor_92",
+    "id_agencia": "agencia_029",
+    "nombre": "Eduardo Ruiz",
+    "puesto": "Asesor Premium",
+    "email": "eduardo@durangoautosierra.mx"
+  },
+  {
+    "_id": "vendedor_93",
+    "id_agencia": "agencia_030",
+    "nombre": "Elena Torres",
+    "puesto": "Gerente Comercial",
+    "email": "elena@tepicautonayarit.com"
+  },
+  {
+    "_id": "vendedor_94",
+    "id_agencia": "agencia_030",
+    "nombre": "Lucía Mendoza",
+    "puesto": "Asesora Comercial",
+    "email": "lucia@tepicautonayarit.com"
+  },
+  {
+    "_id": "vendedor_95",
+    "id_agencia": "agencia_031",
+    "nombre": "Carolina Vargas",
+    "puesto": "Gerente Comercial",
+    "email": "carolina@colimaautopacifico.mx"
+  },
+  {
+    "_id": "vendedor_96",
+    "id_agencia": "agencia_031",
+    "nombre": "Miguel Chávez",
+    "puesto": "Asesor de Ventas",
+    "email": "miguel@colimaautopacifico.mx"
+  },
+  {
+    "_id": "vendedor_97",
+    "id_agencia": "agencia_031",
+    "nombre": "Itzel Gutiérrez",
+    "puesto": "Asesora Comercial",
+    "email": "itzel@colimaautopacifico.mx"
+  },
+  {
+    "_id": "vendedor_98",
+    "id_agencia": "agencia_032",
+    "nombre": "Raúl Flores",
+    "puesto": "Gerente Comercial",
+    "email": "raul@tlaxcalaautocentro.com"
+  },
+  {
+    "_id": "vendedor_99",
+    "id_agencia": "agencia_032",
+    "nombre": "Adriana Mendoza",
+    "puesto": "Asesora Comercial",
+    "email": "adriana@tlaxcalaautocentro.com"
+  }
+]

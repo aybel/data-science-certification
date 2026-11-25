@@ -27,11 +27,31 @@ Dentro de las bases de datos NoSQL existen diferentes subcategoria, como:
 
 # Fundamentos de MongoDB
 
-Ejemplo de un documentos de Mongo: En este caso son los datos de un agencia de autos en México
+Los datos de ejemplo son de agencias de autos en México y viven en tres colecciones. Los archivos están en la carpeta [`init/`](../../../init):
+
+| Colección | Archivo | Documentos | Contenido |
+| --- | --- | ---: | --- |
+| `agencias` | [`agencias.json`](../../../init/agencias.json) | 50 | Datos de cada agencia: contacto, ubicación, horarios, servicios y marcas |
+| `inventario` | [`inventario.json`](../../../init/inventario.json) | 458 | Vehículos a la venta. Cada uno pertenece a una agencia |
+| `vendedores` | [`vehiculos.json`](../../../init/vehiculos.json) | 155 | Vendedores. Cada uno trabaja en una agencia |
+
+El archivo `vehiculos.json` contiene los documentos de la colección `vendedores`, no vehículos. Los vehículos están en `inventario.json`.
+
+La relación entre colecciones es una referencia: `inventario.id_agencia` y `vendedores.id_agencia` guardan el `_id` de la agencia. MongoDB no valida estas referencias, y se resuelven con `$lookup` (ver más abajo).
+
+```mermaid
+erDiagram
+    AGENCIAS ||--o{ INVENTARIO : "tiene"
+    AGENCIAS ||--o{ VENDEDORES : "emplea"
+```
+
+## Documento de `agencias`
+
+Ya no incluye el arreglo `inventario`. Antes los vehículos iban incrustados en la agencia. Ahora están en su propia colección, porque una agencia puede tener decenas de vehículos y el documento crecería sin límite.
 
 ```json
 {
-  "_id": ObjectId('6b03e2314a40a5a576c41178'),
+  "_id": "agencia_001",
   "nombre": "AutoMax Premium",
   "tipo_agencia": "Concesionario Oficial",
   "marcas_autorizadas": ["Toyota", "Honda", "Mazda", "Volkswagen"],
@@ -62,57 +82,9 @@ Ejemplo de un documentos de Mongo: En este caso son los datos de un agencia de a
   },
   "servicios_ofrecidos": [
     "Venta de autos nuevos",
-    "Venta de autos seminuevos",
     "Financiamiento automotriz",
     "Seguro de auto",
-    "Taller de servicio autorizado",
-    "Trámites de emplacamiento"
-  ],
-  "inventario": [
-    {
-      "id_vehiculo": "VH-2023-001",
-      "marca": "Toyota",
-      "modelo": "Corolla",
-      "año": 2024,
-      "version": "LE CVT",
-      "tipo": "Sedán",
-      "precio_mxn": 415000.00,
-      "estado": "Nuevo",
-      "color": "Blanco Perlado",
-      "transmision": "Automática",
-      "combustible": "Gasolina",
-      "disponible": true
-    },
-    {
-      "id_vehiculo": "VH-2022-045",
-      "marca": "Honda",
-      "modelo": "CR-V",
-      "año": 2022,
-      "version": "Touring",
-      "tipo": "SUV",
-      "precio_mxn": 520000.00,
-      "estado": "Seminuevo",
-      "kilometraje": 25000,
-      "color": "Gris Grafito",
-      "transmision": "Automática",
-      "combustible": "Gasolina",
-      "disponible": true
-    },
-    {
-      "id_vehiculo": "VH-2021-112",
-      "marca": "Mazda",
-      "modelo": "Mazda 3",
-      "año": 2021,
-      "version": "i Grand Touring",
-      "tipo": "Hatchback",
-      "precio_mxn": 320000.00,
-      "estado": "Seminuevo",
-      "kilometraje": 48000,
-      "color": "Rojo Diamante",
-      "transmision": "Automática",
-      "combustible": "Gasolina",
-      "disponible": false
-    }
+    "Taller autorizado"
   ],
   "calificacion_clientes": 4.8,
   "fecha_apertura": "2015-03-15T00:00:00Z",
@@ -120,9 +92,78 @@ Ejemplo de un documentos de Mongo: En este caso son los datos de un agencia de a
 }
 ```
 
+## Documento de `inventario`
+
+Un vehículo nuevo y uno seminuevo. Solo los seminuevos tienen `kilometraje`. `id_agencia` apunta a la agencia dueña del vehículo.
+
+```json
+{
+  "_id": "VH-001",
+  "id_agencia": "agencia_001",
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "año": 2024,
+  "precio_mxn": 415000.0,
+  "estado": "Nuevo",
+  "disponible": true
+}
+```
+
+```json
+{
+  "_id": "VH-004",
+  "id_agencia": "agencia_004",
+  "marca": "Audi",
+  "modelo": "A3",
+  "año": 2022,
+  "precio_mxn": 650000.0,
+  "estado": "Seminuevo",
+  "kilometraje": 15000,
+  "disponible": true
+}
+```
+
+| Campo | Valores |
+| --- | --- |
+| `estado` | `"Nuevo"` o `"Seminuevo"` |
+| `disponible` | `false` cuando el vehículo ya está vendido o apartado |
+| `año` | Año del modelo. Los nuevos son de 2023 a 2025 y los seminuevos de 2018 a 2023 |
+
+## Documento de `vendedores`
+
+```json
+{
+  "_id": "vendedor_01",
+  "id_agencia": "agencia_001",
+  "nombre": "Carlos Mendoza",
+  "puesto": "Gerente de Ventas",
+  "email": "carlos@automaxpremium.com"
+}
+```
+
+## Cargar los datos en MongoDB
+
+Con el contenedor `ds-mongo` en marcha (`docker compose up -d mongo`), ejecuta desde la raíz del proyecto. Cada comando usa `--drop`, así que reemplaza la colección si ya existe. Las credenciales se leen de las variables del contenedor.
+
+```bash
+for par in agencias:agencias inventario:inventario vehiculos:vendedores; do
+  archivo=${par%%:*}; coleccion=${par##*:}
+  docker exec -i ds-mongo sh -c "mongoimport -u \"\$MONGO_INITDB_ROOT_USERNAME\" -p \"\$MONGO_INITDB_ROOT_PASSWORD\" --authenticationDatabase admin --db ciencia_datos --collection $coleccion --drop --jsonArray" < init/$archivo.json
+done
+```
+
+Para comprobar la carga:
+
+```javascript
+use ciencia_datos
+db.agencias.countDocuments()    // 50
+db.inventario.countDocuments()  // 458
+db.vendedores.countDocuments()  // 155
+```
+
 # Búsquedas en MongoDB
 
-Los ejemplos usan una colección llamada `agencias` con documentos como el de arriba. Se escriben para `mongosh`. Al final hay un ejemplo equivalente en Python con `pymongo`.
+Los ejemplos usan las colecciones `agencias`, `inventario` y `vendedores` descritas arriba. Se escriben para `mongosh`. Al final hay un ejemplo equivalente en Python con `pymongo`.
 
 Para abrir `mongosh` en el contenedor del proyecto:
 
@@ -179,9 +220,14 @@ db.agencias.find({ "contacto.redes_sociales.instagram": "@automax_premium" })
 // En un arreglo de valores simples, la igualdad busca si el valor está en el arreglo
 db.agencias.find({ marcas_autorizadas: "Toyota" })
 
-// En un arreglo de documentos, la notación de punto busca en cualquier elemento
-db.agencias.find({ "inventario.marca": "Honda" })
+// Los vehículos están en otra colección, así que se filtran directamente
+db.inventario.find({ marca: "Honda" })
+
+// Los vehículos de una agencia se buscan por la referencia
+db.inventario.find({ id_agencia: "agencia_001" })
 ```
+
+Si un documento tuviera un arreglo de subdocumentos, la notación de punto buscaría en cualquiera de sus elementos (por ejemplo, `"inventario.marca"` cuando los vehículos van incrustados). En este modelo no hace falta, porque cada vehículo es un documento propio.
 
 ## Operadores de comparación
 
@@ -283,22 +329,17 @@ db.agencias.find({ marcas_autorizadas: { $all: ["Toyota", "Honda"] } })
 // Exactamente 4 marcas
 db.agencias.find({ marcas_autorizadas: { $size: 4 } })
 
-// Un mismo vehículo debe ser Honda Y costar menos de 600,000
-db.agencias.find({
-  inventario: { $elemMatch: { marca: "Honda", precio_mxn: { $lt: 600000 } } }
-})
+// Agencias que venden Toyota o Honda (alguna de las dos)
+db.agencias.find({ marcas_autorizadas: { $in: ["Toyota", "Honda"] } })
 ```
 
-Sin `$elemMatch`, la consulta `{ "inventario.marca": "Honda", "inventario.precio_mxn": { $lt: 600000 } }` puede cumplirse con elementos distintos: una marca en un vehículo y un precio en otro. Con `$elemMatch` ambas condiciones se aplican al mismo elemento.
-
-Para ver solo el elemento que coincidió, se usa el operador de proyección `$`:
+`$elemMatch` sirve cuando un arreglo contiene subdocumentos y varias condiciones deben cumplirse en el **mismo** elemento. Como los vehículos están en su propia colección, un vehículo que sea Honda y cueste menos de 600,000 se busca con un `find` normal, porque cada documento es un solo vehículo:
 
 ```javascript
-db.agencias.find(
-  { "inventario.marca": "Honda" },
-  { nombre: 1, "inventario.$": 1 }
-)
+db.inventario.find({ marca: "Honda", precio_mxn: { $lt: 600000 } })
 ```
+
+`$elemMatch` vuelve a ser necesario después de un `$lookup`, que deja los vehículos de cada agencia en un arreglo. Ver "Relacionar colecciones con `$lookup`".
 
 ## Búsqueda de texto
 
@@ -364,12 +405,13 @@ db.agencias.find(
 db.agencias.find({ $expr: { $gt: ["$calificacion_clientes", 4.5] } })
 
 // $mod: residuo de una división
-db.agencias.find({ "inventario.año": { $mod: [2, 0] } })
+db.inventario.find({ "año": { $mod: [2, 0] } })
 ```
 
 ## Orden de las condiciones y rendimiento
 
 - Crea índices en los campos que más filtras: `db.agencias.createIndex({ "ubicacion.estado": 1 })`.
+- Indexa los campos de referencia que usas para unir colecciones: `db.inventario.createIndex({ id_agencia: 1 })`. Sin ese índice, cada `$lookup` recorre toda la colección `inventario`.
 - Usa `explain("executionStats")` para saber si una consulta usó un índice o recorrió toda la colección.
 - Proyecta solo los campos que necesitas.
 
@@ -383,11 +425,9 @@ El pipeline de agregación procesa los documentos por etapas. `$match` filtra co
 
 ```javascript
 // Precio promedio de los vehículos disponibles por marca
-db.agencias.aggregate([
-  { $match: { activa: true } },
-  { $unwind: "$inventario" },
-  { $match: { "inventario.disponible": true } },
-  { $group: { _id: "$inventario.marca", precio_promedio: { $avg: "$inventario.precio_mxn" }, total: { $sum: 1 } } },
+db.inventario.aggregate([
+  { $match: { disponible: true } },
+  { $group: { _id: "$marca", precio_promedio: { $avg: "$precio_mxn" }, total: { $sum: 1 } } },
   { $sort: { precio_promedio: -1 } }
 ])
 ```
@@ -399,6 +439,54 @@ db.agencias.aggregate([
 | `$group` | Agrupa y calcula con `$sum`, `$avg`, `$min`, `$max` |
 | `$project` | Elige o calcula campos |
 | `$sort`, `$limit` | Ordenan y limitan el resultado |
+| `$lookup` | Une documentos de otra colección (equivale a un `LEFT JOIN`) |
+
+## Relacionar colecciones con `$lookup`
+
+`$lookup` busca, para cada documento, los documentos de otra colección cuyo campo coincide, y los deja en un arreglo nuevo. Los parámetros son `from` (colección a unir), `localField` (campo de la colección actual), `foreignField` (campo de la otra colección) y `as` (nombre del arreglo resultante).
+
+```javascript
+// Cada agencia con sus vehículos
+db.agencias.aggregate([
+  { $lookup: { from: "inventario", localField: "_id", foreignField: "id_agencia", as: "vehiculos" } },
+  { $project: { nombre: 1, "ubicacion.ciudad": 1, vehiculos: 1 } }
+])
+
+// Número de vehículos disponibles por agencia, de mayor a menor
+db.agencias.aggregate([
+  { $lookup: { from: "inventario", localField: "_id", foreignField: "id_agencia", as: "vehiculos" } },
+  { $project: {
+      nombre: 1,
+      disponibles: { $size: { $filter: { input: "$vehiculos", cond: "$$this.disponible" } } }
+  } },
+  { $sort: { disponibles: -1 } }
+])
+
+// Agencias con al menos un Honda de menos de 600,000: aquí sí se usa $elemMatch
+db.agencias.aggregate([
+  { $lookup: { from: "inventario", localField: "_id", foreignField: "id_agencia", as: "vehiculos" } },
+  { $match: { vehiculos: { $elemMatch: { marca: "Honda", precio_mxn: { $lt: 600000 } } } } },
+  { $project: { nombre: 1, _id: 0 } }
+])
+
+// Desde el otro lado: cada vehículo con los datos de su agencia
+db.inventario.aggregate([
+  { $match: { estado: "Seminuevo", disponible: true } },
+  { $lookup: { from: "agencias", localField: "id_agencia", foreignField: "_id", as: "agencia" } },
+  { $unwind: "$agencia" },
+  { $project: { marca: 1, modelo: 1, precio_mxn: 1, "agencia.nombre": 1, "agencia.ubicacion.ciudad": 1, _id: 0 } }
+])
+
+// Vendedores de las agencias de un estado
+db.vendedores.aggregate([
+  { $lookup: { from: "agencias", localField: "id_agencia", foreignField: "_id", as: "agencia" } },
+  { $unwind: "$agencia" },
+  { $match: { "agencia.ubicacion.estado": "Jalisco" } },
+  { $project: { nombre: 1, puesto: 1, "agencia.nombre": 1, _id: 0 } }
+])
+```
+
+`$unwind` después de un `$lookup` convierte el arreglo de un solo elemento en un subdocumento, y descarta las agencias o vehículos sin coincidencia. Para conservarlos, usa `{ $unwind: { path: "$agencia", preserveNullAndEmptyArrays: true } }`.
 
 ## Equivalencia SQL y MongoDB
 
@@ -414,6 +502,7 @@ db.agencias.aggregate([
 | `ORDER BY x DESC LIMIT 5` | `find().sort({ x: -1 }).limit(5)` |
 | `COUNT(*)` | `countDocuments()` |
 | `GROUP BY` | `aggregate([{ $group: ... }])` |
+| `FROM inventario i LEFT JOIN agencias a ON a._id = i.id_agencia` | `db.inventario.aggregate([{ $lookup: { from: "agencias", localField: "id_agencia", foreignField: "_id", as: "agencia" } }])` |
 
 ## Las mismas consultas desde Python
 
@@ -434,7 +523,10 @@ client = MongoClient(
     password=os.environ["MONGO_PASSWORD"],
     authSource="admin",
 )
-agencias = client["ciencia_datos"]["agencias"]
+db = client["ciencia_datos"]
+agencias = db["agencias"]
+inventario = db["inventario"]
+vendedores = db["vendedores"]
 
 # Comparación
 for doc in agencias.find({"calificacion_clientes": {"$gte": 4.5}}, {"nombre": 1, "_id": 0}):
@@ -453,13 +545,27 @@ resultado = agencias.find(filtro).sort("calificacion_clientes", DESCENDING).limi
 agencias.find({"nombre": {"$regex": "premium", "$options": "i"}})
 agencias.find({"nombre": re.compile("premium", re.IGNORECASE)})
 
-# Un mismo elemento del arreglo cumple varias condiciones
-agencias.find({"inventario": {"$elemMatch": {"marca": "Honda", "precio_mxn": {"$lt": 600000}}}})
+# Vehículos de una agencia que cumplen varias condiciones
+inventario.find({"id_agencia": "agencia_001", "marca": "Honda", "precio_mxn": {"$lt": 600000}})
 
 # Conteo y agregación
 agencias.count_documents({"activa": True})
+inventario.aggregate([
+    {"$match": {"disponible": True}},
+    {"$group": {"_id": "$marca", "promedio": {"$avg": "$precio_mxn"}}},
+    {"$sort": {"promedio": -1}},
+])
+
+# Unir colecciones: cada agencia con sus vehículos
 agencias.aggregate([
-    {"$unwind": "$inventario"},
-    {"$group": {"_id": "$inventario.marca", "promedio": {"$avg": "$inventario.precio_mxn"}}},
+    {"$lookup": {"from": "inventario", "localField": "_id", "foreignField": "id_agencia", "as": "vehiculos"}},
+    {"$project": {"nombre": 1, "total_vehiculos": {"$size": "$vehiculos"}}},
+])
+
+# Vendedores con los datos de su agencia
+vendedores.aggregate([
+    {"$lookup": {"from": "agencias", "localField": "id_agencia", "foreignField": "_id", "as": "agencia"}},
+    {"$unwind": "$agencia"},
+    {"$project": {"nombre": 1, "puesto": 1, "agencia": "$agencia.nombre", "_id": 0}},
 ])
 ```
