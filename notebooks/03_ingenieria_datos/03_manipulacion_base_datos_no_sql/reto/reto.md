@@ -1,0 +1,1 @@
+# Reto Generación de consultas y agregaciones en MongoDB para análisis básico sobre bases de datos no estructuradas
